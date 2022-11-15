@@ -7,10 +7,7 @@ def callback_handler(call: CallbackQuery) -> None:
     '''Обработчик коллбэков от клавиатуры.'''
     try:
         if call.message:
-            if call.data == 'good':
-                bot.send_message(call.message.chat.id, 'Вот и славненько😊')
-            elif call.data == 'bad':
-                bot.send_message(call.message.chat.id, 'Бывает😔 Крепись!')
+            pass
     except Exception as exc:
         print(exc)
     
