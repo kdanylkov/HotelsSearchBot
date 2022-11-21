@@ -1,1 +1,5 @@
-from .how_are_you import how_are_you_reply
+from .cities_keyboard_markup import cities_keyboard
+
+__all__ = [
+        'cities_keyboard',
+        ]

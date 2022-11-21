@@ -1,4 +1,4 @@
-from .lowprice_states import UserLowpriceStates
+from .user_states import UserStates
 
 
-__all__ = ['UserLowpriceStates']
+__all__ = ['UserStates']

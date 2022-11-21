@@ -1,12 +1,13 @@
 from handlers import bot
-from utils.set_bot_commands import set_default_commands
-from telebot.custom_filters import StateFilter
+from utils import set_default_commands, set_custom_filters
 
 
 def main() -> None:
-    '''Функция для запуска бота и создания его меню.'''
+    '''Функция для запуска бота, установки фильтров и создания его меню.'''
+
     set_default_commands(bot)
-    bot.add_custom_filter(StateFilter(bot))
+    set_custom_filters(bot)
+
     bot.polling(non_stop=True, interval=0)
 
 

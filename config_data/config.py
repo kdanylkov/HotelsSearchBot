@@ -17,7 +17,13 @@ DEFAULT_COMMANDS = (
         ('lowprice', 'Поиск по самой низкой цене'),
     )
 
-headers_default = {
+HEADERS = {
 	"X-RapidAPI-Key": API_TOKEN,
 	"X-RapidAPI-Host": "hotels4.p.rapidapi.com"
+}
+
+URLS = {
+    "locations": "https://hotels4.p.rapidapi.com/locations/v2/search",
+    "hotels": "https://hotels4.p.rapidapi.com/properties/list",
+    "photos": "https://hotels4.p.rapidapi.com/properties/get-hotel-photos"
 }

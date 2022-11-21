@@ -1,9 +1,9 @@
-from .start import bot
-from .callbacks import bot
-from .help import bot
-from .lowprice import bot
-from .undefined import bot
+from .custom_handlers import bot
+from .default_handlers import bot
 
 
 __all__ = ['bot']
+
+
+
 
