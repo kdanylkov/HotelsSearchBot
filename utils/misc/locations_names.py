@@ -9,9 +9,10 @@ def get_location_options_list(response_dict: dict) -> list:
     for sug in suggestions:
         if sug['group'] == 'CITY_GROUP':
             for ent in sug['entities']:
-                list_of_names.append(
-                        {'id': ent['destinationId'], 'name': BS(ent['caption'], 'html.parser').text}
-                )
+                if ent['type'] == 'CITY':
+                    list_of_names.append(
+                            {'id': ent['destinationId'], 'name': BS(ent['caption'], 'html.parser').text}
+                    )
     
     return list_of_names
 
