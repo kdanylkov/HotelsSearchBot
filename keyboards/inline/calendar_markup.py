@@ -28,7 +28,7 @@ def create_calendar_keyboard(call, text_if_correct, text_if_incorrect, offset_da
                 text=f"{text_if_correct}: {date.strftime('%d.%m.%Y')}",
                 reply_markup=ReplyKeyboardRemove(),
             )
-            return date
+            return date.date()
         
     elif action == "CANCEL":
         bot.send_message(

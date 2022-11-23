@@ -12,7 +12,7 @@ def get_destination_options_list(response_dict: dict):
                 if ent['type'] == 'CITY':
 
                     destination_id = ent['destinationId']
-                    destination_name = BS(ent['caption'], 'html.parser')
+                    destination_name = BS(ent['caption'], 'html.parser').text
 
 
                     list_of_names.append(
