@@ -1,8 +1,9 @@
-from .callback_filters import locations_factory, LocationsCallbackFilter
+from .custom_callback_filters import destinations_factory, LocationsCallbackFilter, HotelAmount
 
 
 __all__ = [
-        'locations_factory',
+        'destinations_factory',
         'LocationsCallbackFilter',
+        'HotelAmount'
         ]
 

@@ -1,22 +1,22 @@
 from loader import bot, storage, calendar_1_callback
 from telebot.types import CallbackQuery
-from filters import locations_factory
+from filters import destinations_factory
 from datetime import datetime, timedelta
 from states import UserStates
-from keyboards.inline import create_calendar_keyboard, calendar_markup
+from keyboards.inline import create_calendar_keyboard, calendar_keyboard
 
 
 def delete_inline_markup(msg):
     bot.edit_message_text(msg.text, msg.chat.id, msg.message_id, reply_markup=None)
 
 
-@bot.callback_query_handler(func=lambda call: True, locations_config=locations_factory.filter())
+@bot.callback_query_handler(func=lambda call: True, locations_config=destinations_factory.filter())
 def callback_location_choice_handler(call: CallbackQuery):
 
     ID = call.message.chat.id
     bot.delete_message(call.message.chat.id, call.message.message_id)
 
-    callback_data: dict = locations_factory.parse(callback_data=call.data)
+    callback_data: dict = destinations_factory.parse(callback_data=call.data)
     location_id = callback_data['destination_id']
     storage.set_data(call.message.chat.id, call.message.chat.id, key='destination_id', value=location_id)
 
@@ -25,7 +25,7 @@ def callback_location_choice_handler(call: CallbackQuery):
     bot.send_message(
             ID,
             f'Выберите дату заезда:',
-            reply_markup=calendar_markup
+            reply_markup=calendar_keyboard
             )
 
     data = storage.get_data(ID, ID)
@@ -43,7 +43,6 @@ def callback_arrival(call: CallbackQuery):
             text_if_incorrect='Дата заезда не может быть раньше сегодняшнего дня',
             offset_date=datetime.now(),
             bot=bot,
-            storage=storage
         )
     if arrival_date:
         storage.set_data(call.message.chat.id, call.message.chat.id, 'arrival_date', arrival_date)
@@ -51,7 +50,7 @@ def callback_arrival(call: CallbackQuery):
         bot.send_message(
                 call.message.chat.id,
                 f'Выберите дату выезда:',
-                reply_markup=calendar_markup
+                reply_markup=calendar_keyboard
                 )
 
 
@@ -69,14 +68,14 @@ def callback_departure(call: CallbackQuery):
             text_if_incorrect='Дата выезда не может не может быть раньше даты заезда',
             offset_date=offset_date,
             bot=bot,
-            storage=storage
         )
 
     if departure_date:
         storage.set_data(call.message.chat.id, call.message.chat.id, 'departure_date', departure_date)
-        bot.send_message(
-                call.message.chat.id,
-                f'SO FAR SO GOOD!',
-                )
+        data = storage.get_data(call.message.chat.id, call.message.chat.id)
+        print(data)
+
+        bot.set_state(call.message.chat.id, UserStates.hotels_amount)
+        bot.send_message(call.message.chat.id, f'Введите количество отелей для поиска (максимум 25)')
 
 

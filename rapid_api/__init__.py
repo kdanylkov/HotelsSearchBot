@@ -1,4 +1,4 @@
-from .api_requests import fetch_locations_options
+from .api_requests import get_api_destinations_options
 
 
-__all__ = ['fetch_locations_options']
+__all__ = ['get_api_destinations_options']

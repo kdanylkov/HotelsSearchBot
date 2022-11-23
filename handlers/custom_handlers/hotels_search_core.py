@@ -1,10 +1,10 @@
 from loader import bot, storage
 from telebot.types import Message
 from states import UserStates
-from keyboards.inline import cities_keyboard
+from keyboards.inline import destinations_keyboard, confirm_query_keyboard
 import json
-from utils.misc import get_location_options_list, get_locale_code_and_currency
-from rapid_api import fetch_locations_options
+from utils.misc import get_destination_options_list, get_locale_code_and_currency, get_query_confirmation_text, set_id_to_name_data
+from rapid_api import get_api_destinations_options
 
 
 @bot.message_handler(state=UserStates.destination_id)
@@ -12,7 +12,7 @@ def get_city_name(message: Message):
 
     with open('dump_london.json', 'r', encoding='utf-8') as rf:
         locations_dump = json.load(rf)
-    locations_options = get_location_options_list(locations_dump)
+    destinations_list = get_destination_options_list(locations_dump)
 
     with open('static/waiting.tgs', 'rb') as sticker:
         bot.send_sticker(message.chat.id, sticker)
@@ -22,9 +22,11 @@ def get_city_name(message: Message):
         storage.set_data(message.chat.id, message.chat.id, 'locale', locale)
         storage.set_data(message.chat.id, message.chat.id, 'currency', currency)
         
-        #locations_options = fetch_locations_options(message.text, locale)
-        if locations_options:
-            markup = cities_keyboard(locations_options)
+        destinations_list = get_api_destinations_options(message.text, locale)
+        if destinations_list:
+            set_id_to_name_data(storage, message.chat.id, destinations_list)
+
+            markup = destinations_keyboard(destinations_list)
             bot.send_message(message.chat.id, 
                 'Выберите искомый город из списка:', 
                 reply_markup=markup)
@@ -36,7 +38,20 @@ def get_city_name(message: Message):
         bot.send_message(message.chat.id, 'Вы должны ввести название города!')
 
 
+@bot.message_handler(state=UserStates.hotels_amount, is_hotels_amt_correct=True)
+def hotels_amount_correct(message: Message):
+    storage.set_data(message.chat.id, message.chat.id, 'hotels_amount', message.text) 
+
+    txt = get_query_confirmation_text(storage, message.chat.id)
+    #bot.send_message(message.chat.id, text, reply_markup=confirm_query())
+    print('our_data:', txt)
+
+            
 
 
+@bot.message_handler(state=UserStates.hotels_amount, is_hotels_amt_correct=False)
+def hotels_amount_incorrect(message: Message):
+    bot.send_message(message.chat.id,
+            'Количество отелей должно быть цифрой от 1 до 25!')
 
 

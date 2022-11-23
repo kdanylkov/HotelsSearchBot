@@ -1,18 +1,17 @@
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-from filters import locations_factory
+from filters import destinations_factory
 
 
-def cities_keyboard(cities_list):
-    print(cities_list)
+def destinations_keyboard(destinations_list):
     return InlineKeyboardMarkup(
             keyboard=[
                 [
                     InlineKeyboardButton(
                         text=city['name'],
-                        callback_data=locations_factory.new(destination_id=city['id'])
+                        callback_data=destinations_factory.new(destination_id=city['id'])
                     )
                 ]
-            for city in cities_list
+            for city in destinations_list
         ]
     )
 
