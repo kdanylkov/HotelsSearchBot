@@ -16,7 +16,7 @@ def create_calendar_keyboard(call, text_if_correct, text_if_incorrect, offset_da
     name, action, year, month, day = call.data.split(calendar_1_callback.sep)
     date = calendar.calendar_query_handler(
             bot=bot, call=call, name=name, action=action, year=year, month=month, day=day #type: ignore
-    )
+    ).date()
     if action == "DAY":
         if date < offset_date:
             bot.send_message(call.message.chat.id,
@@ -28,7 +28,7 @@ def create_calendar_keyboard(call, text_if_correct, text_if_incorrect, offset_da
                 text=f"{text_if_correct}: {date.strftime('%d.%m.%Y')}",
                 reply_markup=ReplyKeyboardRemove(),
             )
-            return date.date()
+            return date
         
     elif action == "CANCEL":
         bot.send_message(

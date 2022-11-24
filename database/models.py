@@ -23,7 +23,6 @@ class Query(BaseModel):
     departure_date = pw.DateField()
     query_time = pw.DateTimeField()
     hotels_to_find = pw.IntegerField()
-    search_word = pw.CharField()
 
 
 class Hotel(BaseModel):
@@ -38,3 +37,10 @@ class QueryToHotel(BaseModel):
     query_id = pw.ForeignKeyField(Query)
     hotel_id = pw.ForeignKeyField(Hotel)
 
+
+db.create_tables([
+    User,
+    Hotel,
+    Query,
+    QueryToHotel
+    ])

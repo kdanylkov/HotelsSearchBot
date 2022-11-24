@@ -17,8 +17,14 @@ def callback_location_choice_handler(call: CallbackQuery):
     bot.delete_message(call.message.chat.id, call.message.message_id)
 
     callback_data: dict = destinations_factory.parse(callback_data=call.data)
-    location_id = callback_data['destination_id']
-    storage.set_data(call.message.chat.id, call.message.chat.id, key='destination_id', value=location_id)
+
+    destination_id = callback_data['destination_id']
+
+    with bot.retrieve_data(call.message.chat.id) as data:
+        destination_name = data['names_and_ids'][destination_id]
+        data['destination_name'] = destination_name
+        data['destination_id'] = int(destination_id)
+        data.pop('names_and_ids')
 
     bot.set_state(ID, UserStates.arrival_date)
 
@@ -41,7 +47,7 @@ def callback_arrival(call: CallbackQuery):
             call=call,
             text_if_correct='Дата заезда',
             text_if_incorrect='Дата заезда не может быть раньше сегодняшнего дня',
-            offset_date=datetime.now(),
+            offset_date=datetime.now().date(),
             bot=bot,
         )
     if arrival_date:
