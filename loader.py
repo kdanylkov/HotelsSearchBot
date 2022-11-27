@@ -1,3 +1,5 @@
+'''Модуль для создания экземпляра Класса TeleBot'''
+
 from config_data import config
 from telebot import TeleBot
 from telebot.storage import StateMemoryStorage

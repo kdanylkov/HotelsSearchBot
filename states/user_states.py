@@ -6,4 +6,8 @@ class UserStates(StatesGroup):
     arrival_date = State()
     departure_date = State()
     hotels_amount = State()
+    ask_for_photos = State()
+    photos_amount = State()
+    confirm_data = State()
+    wait_for_results = State()
 
