@@ -1,6 +1,7 @@
 import peewee as pw
+from datetime import datetime
 
-db = pw.SqliteDatabase('hotels-search.db')
+db = pw.SqliteDatabase('database/hotels-search.db')
 
 
 class BaseModel(pw.Model):
@@ -17,19 +18,21 @@ class User(BaseModel):
 
 class Query(BaseModel):
 
-    destination_id = pw.PrimaryKeyField()
+    destination_id = pw.CharField()
+    destination_name = pw.CharField()
     user_id = pw.ForeignKeyField(User)
     arrival_date = pw.DateField()
     departure_date = pw.DateField()
-    query_time = pw.DateTimeField()
+    creation_time = pw.DateTimeField(default=datetime.now)
     hotels_to_find = pw.IntegerField()
-
+    photos_to_find = pw.IntegerField()
+    currency = pw.CharField()
 
 class Hotel(BaseModel):
 
-    hotel_id = pw.PrimaryKeyField()
+    id = pw.PrimaryKeyField()
+    name = pw.CharField()
     url = pw.CharField()
-    description = pw.TextField()
     
 
 class QueryToHotel(BaseModel):
