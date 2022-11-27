@@ -14,14 +14,25 @@ class LocationsCallbackFilter(AdvancedCustomFilter):
         return config.check(query=call)
 
 
-class HotelAmount(SimpleCustomFilter):
-
-    key = 'is_hotels_amt_correct'
-
-    def check(self, message: Message):
+class BaseDigitFilter(SimpleCustomFilter):
+    min_val = 1
+    max_val = 25
+    
+    def check(self, message):
         try:
             amt = int(message.text)  #type: ignore
         except ValueError:
             return False
-        return 0 < amt <= 25   
+        return self.min_val <= amt <= self.max_val   
+        
+
+class HotelAmount(BaseDigitFilter):
+
+    key = 'is_hotels_amt_correct'
+
+
+class PhotosAmount(BaseDigitFilter):
+
+    key = 'is_photos_amt_correct'
+    max_val = 5
 
