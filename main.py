@@ -8,7 +8,7 @@ def main() -> None:
     set_default_commands(bot)
     set_custom_filters(bot)
 
-    bot.polling(non_stop=True, interval=0)
+    bot.infinity_polling()
 
 
 if __name__ == '__main__':
