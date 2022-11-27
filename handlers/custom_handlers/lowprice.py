@@ -1,4 +1,4 @@
-from loader import bot, storage
+from loader import bot
 from telebot.types import Message
 from states import UserStates
 
@@ -12,7 +12,9 @@ def lowprice(message: Message) -> None:
     '''
     bot.send_message(chat_id, msg)
     bot.set_state(chat_id, state=UserStates.destination_id)
-    storage.set_data(chat_id, chat_id, 'sortOrder', 'PRICE')
+    with bot.retrieve_data(message.chat.id) as data:
+        data['sortOrder'] = 'PRICE'
+
 
 
     
