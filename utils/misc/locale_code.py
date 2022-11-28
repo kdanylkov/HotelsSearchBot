@@ -3,11 +3,11 @@ from lingua import Language as lg, LanguageDetectorBuilder
 
 
 language_codes = {
-        'ENGLISH': ('en_US', 'USD'),
-        'RUSSIAN': ('ru_RU', 'RUB')
+        'ENGLISH': 'en_US',
+        'RUSSIAN': 'ru_RU'
     }
 
-def get_locale_code_and_currency(word: str) -> str:
+def get_locale(word: str) -> str:
 
     languages = [lg.ENGLISH, lg.RUSSIAN]
 
@@ -19,5 +19,5 @@ def get_locale_code_and_currency(word: str) -> str:
 
 
 if __name__ == '__main__':
-    print(get_locale_code_and_currency('Санкт-Петербург'))
-    print(get_locale_code_and_currency('Saint Petersburg'))
+    print(get_locale('Санкт-Петербург'))
+    print(get_locale('Saint Petersburg'))

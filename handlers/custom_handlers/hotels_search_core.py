@@ -2,7 +2,7 @@ from loader import bot
 from telebot.types import Message
 from states import UserStates
 from keyboards.inline import destinations_keyboard, if_need_photos_keyboard
-from utils import get_locale_code_and_currency, ask_for_input_confirmation
+from utils import get_locale, ask_for_input_confirmation
 from rapid_api import get_api_destinations_options
 from database import add_user
 
@@ -16,7 +16,7 @@ def get_city_name(message: Message):
     #    locations_dump = json.load(rf)
     #destinations_list = get_destination_options_list(locations_dump)
 
-    locale, currency = get_locale_code_and_currency(message.text)       #type: ignore 
+    locale = get_locale(message.text)       #type: ignore 
     with open('static/waiting.tgs', 'rb') as sticker:
         bot.send_sticker(message.chat.id, sticker)
 
@@ -26,7 +26,6 @@ def get_city_name(message: Message):
         with bot.retrieve_data(message.chat.id) as data:                    #type: ignore
             data['names_and_ids'] = {des['id']: des['name'] for des in destinations_list}
             data['locale'] = locale
-            data['currency'] = currency
             data['user_id'] = message.from_user.id
 
         markup = destinations_keyboard(destinations_list)
@@ -92,4 +91,9 @@ def confirmation_keyboard_input(message):
 @bot.message_handler(state=UserStates.wait_for_results)
 def waiting_for_result(message: Message):
     bot.send_message(message.chat.id, 'Результаты поиска загружаются, ожидайте!')
+
+
+@bot.message_handler(state=UserStates.currency)
+def currency_choice_keyboard_input(message: Message):
+    bot.send_message(message.chat.id, 'Нажмите одну из кнопок⬆️')
 

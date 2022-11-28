@@ -3,6 +3,7 @@ from telebot.handler_backends import State, StatesGroup
 
 class UserStates(StatesGroup):
     destination_id = State()
+    currency = State()
     arrival_date = State()
     departure_date = State()
     hotels_amount = State()

@@ -3,7 +3,7 @@ from telebot.types import CallbackQuery
 from filters import destinations_factory
 from datetime import datetime, timedelta
 from states import UserStates
-from keyboards.inline import create_calendar_keyboard, calendar_keyboard
+from keyboards.inline import create_calendar_keyboard, calendar_keyboard, currency_keyboard
 from utils import ask_for_input_confirmation
 from database import add_query
 from rapid_api import get_api_hotels_and_send_to_user
@@ -25,7 +25,19 @@ def callback_location_choice_handler(call: CallbackQuery):
         data['destination_id'] = int(destination_id)
         data.pop('names_and_ids')
 
-    print(data)
+    bot.set_state(ID, UserStates.currency)
+    bot.send_message(ID, 'Выберите валюту', reply_markup=currency_keyboard())
+
+
+
+@bot.callback_query_handler(func=lambda c: True, state=UserStates.currency)
+def callback_currency(call: CallbackQuery):
+
+    ID = call.message.chat.id
+    bot.delete_message(ID, call.message.message_id)
+
+    with bot.retrieve_data(ID) as data:
+        data['currency'] = call.data
 
     bot.set_state(ID, UserStates.arrival_date)
 

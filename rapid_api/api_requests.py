@@ -1,5 +1,4 @@
 from loader import bot
-from telebot.types import InputMediaPhoto
 import requests
 from config_data.config import HEADERS, URLS
 from bs4 import BeautifulSoup as BS
@@ -102,9 +101,9 @@ def get_hotel_info_text(i, r, query_data):
     price_per_night = r['ratePlan']['price']['exactCurrent']
     total_price = round(price_per_night * nights_to_stay, 2)
 
-    customer_rating = get_customer_rating(r)
+    customer_rating = r.get('guestReviews', {}).get('rating')
     if customer_rating:
-        customer_rating = f'{customer_rating}/{r["guestReviews"]["scale"]}'
+        customer_rating = f'{customer_rating}/{r["guestReviews"]["scale"]} ({r["guestReviews"]["total"]} голосов)'
     else:
         customer_rating = 'нет данных'
 
