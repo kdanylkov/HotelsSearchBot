@@ -2,6 +2,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 def confirm_query_keyboard():
+    '''Создание inline клавиатуры для подтверждения введённой информации'''
     markup = InlineKeyboardMarkup(row_width=2)
 
     item1 = InlineKeyboardButton(text='Подтвердить', callback_data='yes_confirm')

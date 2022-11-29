@@ -2,6 +2,12 @@ from telebot.handler_backends import State, StatesGroup
 
 
 class UserStates(StatesGroup):
+    '''
+    Класс UserState наследуется от класса telebot.handler_backends.StatesGroup. 
+    Используется для задания состояний пользователя. 
+
+    Каждый из атрибутов класса является экземпляром класса telebot.handler_backends.State (состояние)
+    '''
     destination_id = State()
     currency = State()
     arrival_date = State()

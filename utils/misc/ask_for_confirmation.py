@@ -10,8 +10,16 @@ criterias = {
 
 
 
-def ask_for_input_confirmation(id) -> None:
+def ask_for_input_confirmation(id: int) -> None:
+    '''
+    Функция формирует из введённых ранее пользователем данных инфомационное сообщение. Пользователю предлагается
+    подтвердить ввод, начать ввод заново либо отменить поиск.
 
+    Arguments:
+        * id: int - Telegram-id пользователя
+    '''
+
+    print(type(id).__name__)
     with bot.retrieve_data(id) as data:                                         #type: ignore
         arrival_date = data['arrival_date'].strftime('%d.%m.%Y')
         departure_date = data['departure_date'].strftime('%d.%m.%Y')
@@ -25,3 +33,4 @@ def ask_for_input_confirmation(id) -> None:
                 6) Дата выезда: {departure_date}'
 
     bot.send_message(id, text, reply_markup=confirm_query_keyboard())
+

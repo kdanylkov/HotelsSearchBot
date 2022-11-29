@@ -3,6 +3,8 @@ from filters import destinations_factory
 
 
 def destinations_keyboard(destinations_list):
+    '''Создание inline клавиатуры для выбора города из списка предложенных вариантов'''
+
     return InlineKeyboardMarkup(
             keyboard=[
                 [

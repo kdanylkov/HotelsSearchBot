@@ -9,13 +9,29 @@ from database import add_user
 
 @bot.message_handler(state=UserStates.destination_id)
 def get_city_name(message: Message):
+    '''
+    Обработчик сообщений от пользователя при вводе с клавиатуры при состоянии пользователя
+    UserStates.destination_id (получение id города)
+
+    При получении ввода пользователя сперва в БД записывается информация о пользователе (вызывается функция
+    add_user)
+
+    Затем вызывается функция get_locale, которая возвращает код локали в зависимости от языка, на котором 
+    было введено сообщение (возвращается либо "ru_RU", либо "en_US")
+
+    Функция get_api_destinations_options обращается к api и возвращает список вариантов городов в ответ на
+    ввод пользователя. 
+        * Если варианты не найдены (возвращено None), пользователю выводится соответствующее сообщение. 
+    Состояние пользователя удаляется.
+        * Если варианты найдены:
+            - в память сценария записываются варианты поиска, код локали и telegram id пользователя
+            - функция destinations_keyboard формируют клавиатуру выбора варианта из списка
+            - пользователя отправляется сообщение с просьбой выбрать вариант из списка
+
+    '''
     
     add_user(message)
     
-    #with open('dump_london.json', 'r', encoding='utf-8') as rf:
-    #    locations_dump = json.load(rf)
-    #destinations_list = get_destination_options_list(locations_dump)
-
     locale = get_locale(message.text)       #type: ignore 
     with open('static/waiting.tgs', 'rb') as sticker:
         bot.send_sticker(message.chat.id, sticker)
@@ -40,6 +56,12 @@ def get_city_name(message: Message):
 
 @bot.message_handler(state=UserStates.hotels_amount, is_hotels_amt_correct=True)
 def hotels_amount_correct(message: Message):
+    '''
+    Обработчик сообщений пользователя при корректном вводе количества отелей (цифрой от 1 до 25)
+    В память сценария записывается количество отелей под ключем 'hotels_amount'
+    Состояние пользователя меняется на UserStates.ask_for_photos (запрос необходимости загрузки фото)
+
+    '''
     with bot.retrieve_data(message.chat.id) as data:                     #type: ignore
         data['hotels_amount'] = message.text
 
@@ -49,17 +71,25 @@ def hotels_amount_correct(message: Message):
             
 @bot.message_handler(state=UserStates.hotels_amount, is_hotels_amt_correct=False)
 def hotels_amount_incorrect(message: Message):
+    '''
+    Обработчик сообщений пользователя при некорректном вводе количества отелей (цифрой от 1 до 25)
+    '''
     bot.send_message(message.chat.id,
             'Количество отелей должно быть введено цифрой от 1 до 25!')
 
 
-@bot.message_handler(state=UserStates.ask_for_photos, content_types=['text'])
-def ask_for_photos_keyboard_input(message):
-    bot.send_message(message.chat.id, 'Нажмите одну из кнопок⬆️')
-
-
 @bot.message_handler(state=UserStates.photos_amount, is_photos_amt_correct=True)
 def photos_amount_correct(message: Message):
+    '''
+    Обработчик сообщений пользователя при корректном вводе количества фотографий (цифрой от 1 до 5)
+    В память сценария записывается количество фотографий под ключем 'photos_amount'
+
+    Состояние пользователя меняется на UserStates.confirm_data (запрос подтверждения ранее введённой информации)
+
+    Вызвается функция ask_for_input_confirmation, генерирующая сообщение с ранее введённой информацией,
+    а также кнопки под этим сообщением (подтверждение, отмена, заново)
+
+    '''
     with bot.retrieve_data(message.chat.id) as data:                      #type: ignore
         data['photos_amount'] = message.text
 
@@ -69,31 +99,62 @@ def photos_amount_correct(message: Message):
 
 @bot.message_handler(state=UserStates.photos_amount, is_photos_amt_correct=False)
 def photos_amount_incorrect(message: Message):
+    '''
+    Обработчик сообщений пользователя при некорректном вводе количества фотографий (цифрой от 1 до 5)
+    '''
     bot.send_message(message.chat.id,
             'Количество фотографий должно быть введено цифрой от 1 до 5!')
 
 
+@bot.message_handler(state=UserStates.ask_for_photos, content_types=['text'])
+def ask_for_photos_keyboard_input(message):
+    '''
+    Обработчик ввода пользователя, отличного от нажатия требуемых для данного состояния
+    (UserStates.ask_for_photos) кнопок
+    '''
+    bot.send_message(message.chat.id, 'Нажмите одну из кнопок⬆️')
+
+
 @bot.message_handler(state=UserStates.arrival_date, content_types=['text'])
 def calendar_arrival_state_keyboard_input(message):
+    '''
+    Обработчик ввода пользователя, отличного от нажатия требуемых для данного состояния
+    (UserStates.arrival_date) кнопок
+    '''
     bot.send_message(message.chat.id, 'Чтобы ввести дату, воспользуйтесь кнопками календаря⬆️')
 
 
 @bot.message_handler(state=UserStates.departure_date, content_types=['text'])
 def calendar_departure_state_keyboard_input(message):
+    '''
+    Обработчик ввода пользователя, отличного от нажатия требуемых для данного состояния
+    (UserStates.departure_date) кнопок
+    '''
     bot.send_message(message.chat.id, 'Чтобы ввести дату, воспользуйтесь кнопками календаря⬆️')
 
 
 @bot.message_handler(state=UserStates.confirm_data, content_types=['text'])
 def confirmation_keyboard_input(message):
+    '''
+    Обработчик ввода пользователя, отличного от нажатия требуемых для данного состояния
+    (UserStates.confirm_data) кнопок
+    '''
     bot.send_message(message.chat.id, 'Нажмите одну из кнопок⬆️')
 
 
 @bot.message_handler(state=UserStates.wait_for_results)
 def waiting_for_result(message: Message):
+    '''
+    Обработчик любого ввода при состояния пользователя UserStates.wait_for_results
+    '''
     bot.send_message(message.chat.id, 'Результаты поиска загружаются, ожидайте!')
 
 
 @bot.message_handler(state=UserStates.currency)
 def currency_choice_keyboard_input(message: Message):
+    '''
+    Обработчик ввода пользователя, отличного от нажатия требуемых для данного состояния
+    (UserStates.currency) кнопок
+    '''
     bot.send_message(message.chat.id, 'Нажмите одну из кнопок⬆️')
 

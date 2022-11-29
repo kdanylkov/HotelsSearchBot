@@ -1,3 +1,13 @@
+'''
+Конфигурационный модуль бота. 
+    * BOT_TOKEN: Токен бота, полученный от BotFather (подтягивается из .env)
+    * API_TOKEN: Токен для взаимодействия с api сайта hotels.com, полученный от сервиса rapidapi.com (подтягивается из .env)
+    * DEFAULT_COMMANDS: список команд бота, используется для создания меню бота, а также для вывод текста справки.
+    * HEADERS: Хедеры для запросов к api, содержит токен и адрес хоста.
+    * URLS: Эндпоинты для взаимодействия с api сайта hotels.com
+'''
+
+
 from os import getenv
 from dotenv import load_dotenv, find_dotenv
 
