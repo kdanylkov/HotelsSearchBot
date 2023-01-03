@@ -149,12 +149,3 @@ def waiting_for_result(message: Message):
     '''
     bot.send_message(message.chat.id, 'Результаты поиска загружаются, ожидайте!')
 
-
-@bot.message_handler(state=UserStates.currency)
-def currency_choice_keyboard_input(message: Message):
-    '''
-    Обработчик ввода пользователя, отличного от нажатия требуемых для данного состояния
-    (UserStates.currency) кнопок
-    '''
-    bot.send_message(message.chat.id, 'Нажмите одну из кнопок⬆️')
-

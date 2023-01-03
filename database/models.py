@@ -41,7 +41,6 @@ class Query(BaseModel):
         * creation_time - Дата и время запроса
         * hotels_to_find - Количество отелей для поиска
         * photos_to_find - Количество фотографий для каждого отеля
-        * currency - Валюта, в которой отображаются цены за проживание
 
     '''
 
@@ -53,7 +52,6 @@ class Query(BaseModel):
     creation_time = pw.DateTimeField(default=datetime.now)
     hotels_to_find = pw.IntegerField()
     photos_to_find = pw.IntegerField()
-    currency = pw.CharField()
 
 
 class Hotel(BaseModel):

@@ -9,7 +9,6 @@ class UserStates(StatesGroup):
     Каждый из атрибутов класса является экземпляром класса telebot.handler_backends.State (состояние)
     '''
     destination_id = State()
-    currency = State()
     arrival_date = State()
     departure_date = State()
     hotels_amount = State()

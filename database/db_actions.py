@@ -33,7 +33,6 @@ def add_query(data: dict) -> int:
             departure_date=data['departure_date'].date(),
             hotels_to_find=data['hotels_amount'],
             photos_to_find=data['photos_amount'],
-            currency=data['currency']
             )
     return query.id
 

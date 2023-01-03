@@ -22,7 +22,7 @@ def lowprice(message: Message) -> None:
     bot.send_message(chat_id, msg)
     bot.set_state(chat_id, state=UserStates.destination_id)
     with bot.retrieve_data(message.chat.id) as data:
-        data['sortOrder'] = 'PRICE'
+        data['sortOrder'] = 'lowprice'
 
 
 

@@ -3,10 +3,10 @@ from telebot.types import CallbackQuery
 from filters import destinations_factory
 from datetime import datetime, timedelta
 from states import UserStates
-from keyboards.inline import create_calendar_keyboard, calendar_keyboard, currency_keyboard
+from keyboards.inline import create_calendar_keyboard, calendar_keyboard
 from utils import ask_for_input_confirmation
 from database import add_query
-from rapid_api import get_api_hotels_and_send_to_user
+from rapid_api import get_hotels_from_api
 
 
 @bot.callback_query_handler(func=None, locations_config=destinations_factory.filter())
@@ -19,7 +19,8 @@ def callback_location_choice_handler(call: CallbackQuery):
     После получения выбора пользователя, id и имя города сохраняется в память сценария 
     под ключами "destination_id" и "destination_name".
 
-    После получения данных устанавливается новое состояние пользователя - UserStates.currency (выбор валюты)
+    После получения данных устанавливается новое состояние пользователя - UserStates.arrival_date 
+    (выбор даты заезда)
     '''
 
     ID = call.message.chat.id
@@ -34,31 +35,6 @@ def callback_location_choice_handler(call: CallbackQuery):
         data['destination_name'] = destination_name
         data['destination_id'] = int(destination_id)
         data.pop('names_and_ids')
-
-    bot.set_state(ID, UserStates.currency)
-    bot.send_message(ID, 'Выберите валюту', reply_markup=currency_keyboard())
-
-
-
-@bot.callback_query_handler(func=lambda c: True, state=UserStates.currency)
-def callback_currency(call: CallbackQuery):
-    '''
-    Обработчик callback запросов при выборе валют.
-    Обрабатывается любое нажатие inline клавиатуры, когда пользователь находится в состоянии
-    UserStates.currency
-
-    После получения выбора call.data, которая соответствует коду валюты, сохраняется в память сценария 
-    под ключём "currency".
-
-    После получения данных устанавливается новое состояние пользователя - UserStates.arrival_date 
-    (выбор даты заезда)
-    '''
-
-    ID = call.message.chat.id
-    bot.delete_message(ID, call.message.message_id)
-
-    with bot.retrieve_data(ID) as data:                  #type: ignore
-        data['currency'] = call.data
 
     bot.set_state(ID, UserStates.arrival_date)
 
@@ -219,9 +195,9 @@ def callback_data_input_confirmation(call: CallbackQuery):
                 bot.send_sticker(call.message.chat.id, sticker)
 
             bot.set_state(call.message.chat.id, UserStates.wait_for_results)
-            get_api_hotels_and_send_to_user(data)
+
+            get_hotels_from_api(data)
 
             bot.delete_state(call.message.chat.id)
-
 
 

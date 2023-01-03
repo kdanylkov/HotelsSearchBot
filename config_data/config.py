@@ -28,12 +28,13 @@ DEFAULT_COMMANDS = (
     )
 
 HEADERS = {
+    "content-type": "application/json",
 	"X-RapidAPI-Key": API_TOKEN,
 	"X-RapidAPI-Host": "hotels4.p.rapidapi.com"
 }
 
 URLS = {
-    "locations": "https://hotels4.p.rapidapi.com/locations/v2/search",
-    "hotels": "https://hotels4.p.rapidapi.com/properties/list",
-    "photos": "https://hotels4.p.rapidapi.com/properties/get-hotel-photos"
+    "locations": "https://hotels4.p.rapidapi.com/locations/v3/search",
+    "hotels": "https://hotels4.p.rapidapi.com/properties/v2/list",
+    "photos": "https://hotels4.p.rapidapi.com/properties/v2/detail"
 }
