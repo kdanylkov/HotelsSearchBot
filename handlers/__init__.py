@@ -1,7 +1,9 @@
-from . import start
-from . import callbacks
-from . import hello_world
-from . import help
-from . import undefined
+from .custom_handlers import bot
+from .default_handlers import bot
+
+
+__all__ = ['bot']
+
+
 
 

@@ -1,12 +1,14 @@
-from loader import bot
-import handlers
-from utils.set_bot_commands import set_default_commands
+from handlers import bot
+from utils import set_default_commands, set_custom_filters
 
 
 def main() -> None:
-    '''Функция для запуска бота и создания его меню.'''
+    '''Функция для запуска бота, установки фильтров и создания его меню.'''
+
     set_default_commands(bot)
-    bot.polling(non_stop=True, interval=0)
+    set_custom_filters(bot)
+
+    bot.infinity_polling()
 
 
 if __name__ == '__main__':
