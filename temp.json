@@ -3,8 +3,8 @@
     "summary": {
         "__typename": "PropertySummary",
         "fees": null,
-        "id": "3113039",
-        "name": "Park Plaza Westminster Bridge London",
+        "id": "1458473",
+        "name": "Riga Islande Hotel",
         "map": {
             "__typename": "PropertyInfoMap",
             "markers": [
@@ -15,40 +15,14 @@
                         "icon": "AIRPORT",
                         "latLong": {
                             "__typename": "Coordinates",
-                            "latitude": 51.503667,
-                            "longitude": 0.049717
+                            "latitude": 56.922215,
+                            "longitude": 23.973691
                         },
                         "type": "POI"
                     },
                     "poiContent": null,
-                    "subtitle": "36 min drive",
-                    "title": "London (LCY-London City)"
-                },
-                {
-                    "__typename": "PointOfInterest",
-                    "mapMarker": {
-                        "__typename": "MapMarker",
-                        "icon": "AIRPORT",
-                        "latLong": {
-                            "__typename": "Coordinates",
-                            "latitude": 51.470878,
-                            "longitude": -0.449753
-                        },
-                        "type": "POI"
-                    },
-                    "poiContent": {
-                        "__typename": "PoiContent",
-                        "description": null,
-                        "id": "5392460",
-                        "image": {
-                            "__typename": "Image",
-                            "aspectRatio": null,
-                            "description": "London which includes heritage elements and an airport as well as an individual femail",
-                            "url": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/495000/495626-london-lhr-heathrow.jpg"
-                        }
-                    },
-                    "subtitle": "51 min drive",
-                    "title": "London (LHR-Heathrow)"
+                    "subtitle": "15 min drive",
+                    "title": "Riga (RIX-Riga Intl.)"
                 },
                 {
                     "__typename": "PointOfInterest",
@@ -57,19 +31,19 @@
                         "icon": "HOTEL",
                         "latLong": {
                             "__typename": "Coordinates",
-                            "latitude": 51.501108,
-                            "longitude": -0.117331
+                            "latitude": 56.95132,
+                            "longitude": 24.08474
                         },
                         "type": "HOTEL"
                     },
                     "poiContent": {
                         "__typename": "PoiContent",
                         "description": null,
-                        "id": "3113039",
+                        "id": "1458473",
                         "image": null
                     },
                     "subtitle": null,
-                    "title": "Park Plaza Westminster Bridge London"
+                    "title": "Riga Islande Hotel"
                 }
             ]
         },
@@ -77,17 +51,24 @@
             "__typename": "PropertyPolicies",
             "checkinEnd": null,
             "checkinInstructions": [
-                "Front desk staff will greet guests on arrival",
-                "For more details, please contact the property using the information on the booking confirmation"
+                "This property offers transfers from the airport (surcharges may apply); guests must contact the property with arrival details before travel, using the contact information on the booking confirmation",
+                "Front desk staff will greet guests on arrival"
             ],
             "checkinMinAge": null,
             "checkinStart": null,
             "checkoutTime": null,
-            "childAndBed": null,
+            "childAndBed": {
+                "__typename": "PropertyInfoSubSection",
+                "body": [
+                    " One child (3 years old and younger) stays free when occupying the parent or guardian's room, using existing bedding "
+                ],
+                "descriptions": [],
+                "title": null
+            },
             "needToKnow": {
                 "__typename": "PropertyInfoSubSection",
                 "body": [
-                    "<p>Construction is underway at a neighboring building and there may be noise disturbance from the construction work. </p><p>The property has connecting/adjoining rooms, which are subject to availability and can be requested by contacting the property using the number on the booking confirmation. </p><p>Only registered guests are allowed in the guestrooms. </p> <p>Guests can rest easy knowing there's a fire extinguisher, a smoke detector, and a first aid kit on site. </p><p> This property welcomes guests of all sexual orientations and gender identities (LGBTQ friendly). </p><p>The name on the credit card used at check-in to pay for incidentals must be the primary name on the guestroom reservation. </p><p>Special cancellation policies or charges may apply for group reservations (more than 8 rooms for the same property / stay dates). </p><p>This property accepts credit cards and debit cards. Cash is not accepted.</p><p>This property reserves the right to pre-authorize the guest's credit card prior to arrival. </p>"
+                    "<p>Guests can rest easy knowing there's a fire extinguisher, a smoke detector, a security system, and a first aid kit on site. </p><p>This property accepts credit cards. Cash is not accepted.</p>"
                 ],
                 "descriptions": [],
                 "title": "You need to know"
@@ -96,37 +77,26 @@
             "pets": {
                 "__typename": "PropertyInfoSubSection",
                 "body": [
-                    "Pets not allowed",
-                    "Service animals welcome"
+                    "Pets not allowed"
                 ],
                 "descriptions": [],
                 "title": "Pets"
             },
-            "shouldMention": {
-                "__typename": "PropertyInfoSubSection",
-                "body": [
-                    "Only registered guests are allowed in the guestrooms",
-                    "The property has connecting/adjoining rooms, which are subject to availability and can be requested by contacting the property using the number on the booking confirmation",
-                    "Construction is underway at a neighboring building and there may be noise disturbance from the construction work",
-                    "This property welcomes guests of all sexual orientations and gender identities (LGBTQ friendly)"
-                ],
-                "descriptions": [],
-                "title": "We should mention"
-            }
+            "shouldMention": null
         },
         "telesalesPhoneNumber": "",
         "bannerMessage": null,
         "latinAlphabetName": "",
-        "tagline": "4-star hotel with spa, near Southbank Centre Book Market  \n",
+        "tagline": "4-star hotel with 2 restaurants, near Riga Castle  \n",
         "starRatingIcon": {
             "__typename": "Icon",
             "token": "STAR"
         },
         "overview": {
             "__typename": "PropertyOverview",
-            "vipMessaging": "VIP Access",
+            "vipMessaging": null,
             "inventoryType": null,
-            "accessibilityLabel": "Overview of Park Plaza Westminster Bridge London",
+            "accessibilityLabel": "Overview of Riga Islande Hotel",
             "label": null,
             "propertyRating": {
                 "__typename": "EGDSIconRating",
@@ -178,14 +148,14 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "1019 rooms",
+                                    "text": "205 rooms",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Arranged over 16 floors",
+                                    "text": "Arranged over 10 floors",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -212,28 +182,14 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Check-in time from 3:00 PM - midnight",
+                                    "text": "Check-in time from 2 PM - 6 AM",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Express check-out available",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Late check-in subject to availability",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Minimum check-in age - 18 ",
+                                    "text": "Express check-in/out available",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -241,13 +197,6 @@
                                 {
                                     "__typename": "PropertyInfoItem",
                                     "text": "Check-out time is noon",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Late check-out subject to availability",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -301,14 +250,14 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Front desk staff will greet guests on arrival",
+                                    "text": "This property offers transfers from the airport (surcharges may apply); guests must contact the property with arrival details before travel, using the contact information on the booking confirmation",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "For more details, please contact the property using the information on the booking confirmation",
+                                    "text": "Front desk staff will greet guests on arrival",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -346,10 +295,30 @@
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "__typename": "PropertyInfoContent",
+                            "header": {
+                                "__typename": "LodgingHeader",
+                                "text": "Children",
+                                "subText": null,
+                                "mark": null
+                            },
+                            "icon": {
+                                "__typename": "Icon",
+                                "id": "done",
+                                "description": "",
+                                "size": null,
+                                "token": "done",
+                                "theme": null
+                            },
+                            "jumpLink": null,
+                            "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Minimum check-in age is 18 ",
+                                    "text": " One child (3 years old and younger) stays free when occupying the parent or guardian's room, using existing bedding ",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -377,13 +346,6 @@
                                 {
                                     "__typename": "PropertyInfoItem",
                                     "text": "Pets not allowed",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Service animals welcome",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -417,7 +379,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Free wired Internet access in rooms ",
+                                    "text": "Free WiFi in rooms",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -444,7 +406,7 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Onsite self parking (GBP 65 per day)",
+                                    "text": "Free onsite self parking",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -455,10 +417,30 @@
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "__typename": "PropertyInfoContent",
+                            "header": {
+                                "__typename": "LodgingHeader",
+                                "text": "Transfers",
+                                "subText": null,
+                                "mark": null
+                            },
+                            "icon": {
+                                "__typename": "Icon",
+                                "id": "done",
+                                "description": "",
+                                "size": null,
+                                "token": "done",
+                                "theme": null
+                            },
+                            "jumpLink": null,
+                            "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Offsite parking within 5 ft (GBP 65 per day)",
+                                    "text": "Airport shuttle on request (available 24 hours)* ",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -525,7 +507,7 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Buffet breakfast (surcharge) each morning 6:30 AM–10:30 AM",
+                                    "text": "Free continental breakfast each morning 7 AM–10:30 AM",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -546,14 +528,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Coffee shop",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "24-hour room service",
+                                    "text": "Room service (limited hours)",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -561,6 +536,40 @@
                                 {
                                     "__typename": "PropertyInfoItem",
                                     "text": "Snack bar/deli",
+                                    "state": null,
+                                    "moreInfo": null,
+                                    "icon": null
+                                }
+                            ]
+                        },
+                        {
+                            "__typename": "PropertyInfoContent",
+                            "header": {
+                                "__typename": "LodgingHeader",
+                                "text": "Traveling with children",
+                                "subText": null,
+                                "mark": null
+                            },
+                            "icon": {
+                                "__typename": "Icon",
+                                "id": "family_friendly",
+                                "description": "",
+                                "size": null,
+                                "token": "family_friendly",
+                                "theme": null
+                            },
+                            "jumpLink": null,
+                            "items": [
+                                {
+                                    "__typename": "PropertyInfoItem",
+                                    "text": "Children stay free (see details)",
+                                    "state": null,
+                                    "moreInfo": null,
+                                    "icon": null
+                                },
+                                {
+                                    "__typename": "PropertyInfoItem",
+                                    "text": "Children's menu",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -587,21 +596,7 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Bicycle rentals nearby",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Golfing nearby",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Ziplining nearby",
+                                    "text": "Beach nearby",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -642,7 +637,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Computer station",
+                                    "text": "Conference space",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -670,13 +665,6 @@
                                 {
                                     "__typename": "PropertyInfoItem",
                                     "text": "24-hour front desk",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Concierge services",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -711,21 +699,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Wedding services",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
                                     "text": "Multilingual staff",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Porter/bellhop",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -752,21 +726,7 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "1 building/tower",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Built in 2010",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "ATM/banking",
+                                    "text": "Safe-deposit box at front desk",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -780,21 +740,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Fitness center",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "An indoor pool",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Full-service spa",
+                                    "text": "24-hour fitness center",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -819,13 +765,6 @@
                             },
                             "jumpLink": null,
                             "items": [
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Wheelchair accessible",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
                                 {
                                     "__typename": "PropertyInfoItem",
                                     "text": "Elevator",
@@ -856,14 +795,14 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Wheelchair-accessible parking",
+                                    "text": "Wheelchair-accessible path of travel",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Wheelchair-accessible concierge desk",
+                                    "text": "Wheelchair-accessible parking",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -877,14 +816,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Grab bar near toilet",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Bathroom emergency pull cord",
+                                    "text": "Wheelchair-accessible business center",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -911,27 +843,6 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Arabic",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Chinese (Mandarin)",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Dutch",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
                                     "text": "English",
                                     "state": null,
                                     "moreInfo": null,
@@ -939,49 +850,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "French",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "German",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Hindi",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Italian",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Irish",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Japanese",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Polish",
+                                    "text": "Latvian",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -989,13 +858,6 @@
                                 {
                                     "__typename": "PropertyInfoItem",
                                     "text": "Russian",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Spanish",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -1035,21 +897,14 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "37-inch plasma TV",
+                                    "text": "LED television",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Premium cable channels",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Pay movies",
+                                    "text": "Satellite TV channels",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -1090,14 +945,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Coffee/tea maker",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Iron/ironing board",
+                                    "text": "Iron/ironing board (on request)",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -1138,21 +986,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Premium bedding",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Memory foam mattress",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Free crib/infant bed",
+                                    "text": "Bed sheets provided",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -1179,13 +1013,6 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Private bathroom",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
                                     "text": "Shower only",
                                     "state": null,
                                     "moreInfo": null,
@@ -1201,6 +1028,13 @@
                                 {
                                     "__typename": "PropertyInfoItem",
                                     "text": "Hair dryer",
+                                    "state": null,
+                                    "moreInfo": null,
+                                    "icon": null
+                                },
+                                {
+                                    "__typename": "PropertyInfoItem",
+                                    "text": "Towels",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -1234,7 +1068,7 @@
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Free wired internet",
+                                    "text": "Free WiFi",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -1261,21 +1095,14 @@
                             "items": [
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "In-room safe (laptop compatible)",
+                                    "text": "Daily housekeeping",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
                                 },
                                 {
                                     "__typename": "PropertyInfoItem",
-                                    "text": "Connecting/adjoining rooms available",
-                                    "state": null,
-                                    "moreInfo": null,
-                                    "icon": null
-                                },
-                                {
-                                    "__typename": "PropertyInfoItem",
-                                    "text": "Recycling",
+                                    "text": "In-room safe",
                                     "state": null,
                                     "moreInfo": null,
                                     "icon": null
@@ -1298,7 +1125,21 @@
                 "items": [
                     {
                         "__typename": "PropertyInfoItem",
-                        "text": "Parking available",
+                        "text": "Free breakfast",
+                        "state": null,
+                        "moreInfo": null,
+                        "icon": {
+                            "__typename": "Icon",
+                            "id": "free_breakfast",
+                            "description": "",
+                            "size": null,
+                            "token": "free_breakfast",
+                            "theme": null
+                        }
+                    },
+                    {
+                        "__typename": "PropertyInfoItem",
+                        "text": "Free parking",
                         "state": null,
                         "moreInfo": null,
                         "icon": {
@@ -1307,34 +1148,6 @@
                             "description": "",
                             "size": null,
                             "token": "local_parking",
-                            "theme": null
-                        }
-                    },
-                    {
-                        "__typename": "PropertyInfoItem",
-                        "text": "Pool",
-                        "state": null,
-                        "moreInfo": null,
-                        "icon": {
-                            "__typename": "Icon",
-                            "id": "pool",
-                            "description": "",
-                            "size": null,
-                            "token": "pool",
-                            "theme": null
-                        }
-                    },
-                    {
-                        "__typename": "PropertyInfoItem",
-                        "text": "Internet access",
-                        "state": null,
-                        "moreInfo": null,
-                        "icon": {
-                            "__typename": "Icon",
-                            "id": "computer",
-                            "description": "",
-                            "size": null,
-                            "token": "computer",
                             "theme": null
                         }
                     },
@@ -1349,6 +1162,20 @@
                             "description": "",
                             "size": null,
                             "token": "wifi",
+                            "theme": null
+                        }
+                    },
+                    {
+                        "__typename": "PropertyInfoItem",
+                        "text": "Airport transfer",
+                        "state": null,
+                        "moreInfo": null,
+                        "icon": {
+                            "__typename": "Icon",
+                            "id": "airport_shuttle",
+                            "description": "",
+                            "size": null,
+                            "token": "airport_shuttle",
                             "theme": null
                         }
                     },
@@ -1424,7 +1251,21 @@
                         "items": [
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Parking available",
+                                "text": "Free breakfast",
+                                "state": null,
+                                "moreInfo": null,
+                                "icon": {
+                                    "__typename": "Icon",
+                                    "id": "free_breakfast",
+                                    "description": "",
+                                    "size": null,
+                                    "token": "free_breakfast",
+                                    "theme": null
+                                }
+                            },
+                            {
+                                "__typename": "PropertyInfoItem",
+                                "text": "Free parking",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": {
@@ -1433,34 +1274,6 @@
                                     "description": "",
                                     "size": null,
                                     "token": "local_parking",
-                                    "theme": null
-                                }
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Pool",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": {
-                                    "__typename": "Icon",
-                                    "id": "pool",
-                                    "description": "",
-                                    "size": null,
-                                    "token": "pool",
-                                    "theme": null
-                                }
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Internet access",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": {
-                                    "__typename": "Icon",
-                                    "id": "computer",
-                                    "description": "",
-                                    "size": null,
-                                    "token": "computer",
                                     "theme": null
                                 }
                             },
@@ -1475,6 +1288,20 @@
                                     "description": "",
                                     "size": null,
                                     "token": "wifi",
+                                    "theme": null
+                                }
+                            },
+                            {
+                                "__typename": "PropertyInfoItem",
+                                "text": "Airport transfer",
+                                "state": null,
+                                "moreInfo": null,
+                                "icon": {
+                                    "__typename": "Icon",
+                                    "id": "airport_shuttle",
+                                    "description": "",
+                                    "size": null,
+                                    "token": "airport_shuttle",
                                     "theme": null
                                 }
                             },
@@ -1530,7 +1357,7 @@
                         "items": [
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Buffet breakfast (surcharge) each morning 6:30 AM–10:30 AM",
+                                "text": "Free continental breakfast each morning 7 AM–10:30 AM",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1551,14 +1378,7 @@
                             },
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Coffee shop",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "24-hour room service",
+                                "text": "Room service (limited hours)",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1566,6 +1386,40 @@
                             {
                                 "__typename": "PropertyInfoItem",
                                 "text": "Snack bar/deli",
+                                "state": null,
+                                "moreInfo": null,
+                                "icon": null
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "PropertyInfoContent",
+                        "header": {
+                            "__typename": "LodgingHeader",
+                            "text": "Traveling with children",
+                            "subText": null,
+                            "mark": null
+                        },
+                        "icon": {
+                            "__typename": "Icon",
+                            "id": "family_friendly",
+                            "description": "",
+                            "size": null,
+                            "token": "family_friendly",
+                            "theme": null
+                        },
+                        "jumpLink": null,
+                        "items": [
+                            {
+                                "__typename": "PropertyInfoItem",
+                                "text": "Children stay free (see details)",
+                                "state": null,
+                                "moreInfo": null,
+                                "icon": null
+                            },
+                            {
+                                "__typename": "PropertyInfoItem",
+                                "text": "Children's menu",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1592,21 +1446,7 @@
                         "items": [
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Bicycle rentals nearby",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Golfing nearby",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Ziplining nearby",
+                                "text": "Beach nearby",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1647,7 +1487,7 @@
                             },
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Computer station",
+                                "text": "Conference space",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1675,13 +1515,6 @@
                             {
                                 "__typename": "PropertyInfoItem",
                                 "text": "24-hour front desk",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Concierge services",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1716,21 +1549,7 @@
                             },
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Wedding services",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
                                 "text": "Multilingual staff",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Porter/bellhop",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1757,21 +1576,7 @@
                         "items": [
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "1 building/tower",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Built in 2010",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "ATM/banking",
+                                "text": "Safe-deposit box at front desk",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1785,21 +1590,7 @@
                             },
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Fitness center",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "An indoor pool",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Full-service spa",
+                                "text": "24-hour fitness center",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1824,13 +1615,6 @@
                         },
                         "jumpLink": null,
                         "items": [
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Wheelchair accessible",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
                             {
                                 "__typename": "PropertyInfoItem",
                                 "text": "Elevator",
@@ -1861,14 +1645,14 @@
                             },
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Wheelchair-accessible parking",
+                                "text": "Wheelchair-accessible path of travel",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
                             },
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Wheelchair-accessible concierge desk",
+                                "text": "Wheelchair-accessible parking",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1882,14 +1666,7 @@
                             },
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Grab bar near toilet",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Bathroom emergency pull cord",
+                                "text": "Wheelchair-accessible business center",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1916,27 +1693,6 @@
                         "items": [
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "Arabic",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Chinese (Mandarin)",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Dutch",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
                                 "text": "English",
                                 "state": null,
                                 "moreInfo": null,
@@ -1944,49 +1700,7 @@
                             },
                             {
                                 "__typename": "PropertyInfoItem",
-                                "text": "French",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "German",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Hindi",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Italian",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Irish",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Japanese",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Polish",
+                                "text": "Latvian",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -1994,13 +1708,6 @@
                             {
                                 "__typename": "PropertyInfoItem",
                                 "text": "Russian",
-                                "state": null,
-                                "moreInfo": null,
-                                "icon": null
-                            },
-                            {
-                                "__typename": "PropertyInfoItem",
-                                "text": "Spanish",
                                 "state": null,
                                 "moreInfo": null,
                                 "icon": null
@@ -2015,21 +1722,21 @@
             "__typename": "PropertyLocation",
             "address": {
                 "__typename": "PropertyAddress",
-                "addressLine": "200 Westminster Bridge Road, London, England, SE1 7UT",
-                "city": "London",
-                "province": "England",
-                "countryCode": "GBR",
-                "firstAddressLine": "200 Westminster Bridge Road",
+                "addressLine": "Kipsalas iela 2, Riga, LV-1048",
+                "city": "Riga",
+                "province": "",
+                "countryCode": "LVA",
+                "firstAddressLine": "Kipsalas iela 2",
                 "secondAddressLine": ""
             },
             "coordinates": {
                 "__typename": "Coordinates",
-                "latitude": 51.501108,
-                "longitude": -0.117331
+                "latitude": 56.95132,
+                "longitude": 24.08474
             },
             "multiCityRegion": {
                 "__typename": "Region",
-                "id": "178279"
+                "id": "6056778"
             },
             "whatsAround": {
                 "__typename": "PropertyWhatsAround",
@@ -2055,7 +1762,7 @@
             "staticImage": {
                 "__typename": "Image",
                 "description": "Map",
-                "url": "https://maps.googleapis.com/maps/api/staticmap?channel=expedia-HotelInformation&maptype=roadmap&format=jpg&zoom=13&scale=&size=600x120&markers=icon:https://a.travel-assets.com/shopping-pwa/images/his-preview-marker.png%7C51.501108,-0.117331&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=UNBeZoFRIE-2ygbRFBYM20fOCfk=",
+                "url": "https://maps.googleapis.com/maps/api/staticmap?channel=expedia-HotelInformation&maptype=roadmap&format=jpg&zoom=13&scale=&size=600x120&markers=icon:https://a.travel-assets.com/shopping-pwa/images/his-preview-marker.png%7C56.95132,24.08474&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=DFEp_4AQHMMIkr6YoaqYHYEZo5o=",
                 "aspectRatio": null
             }
         },
@@ -2068,202 +1775,172 @@
         "images": [
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Exterior, image",
+                "accessibilityText": "Aerial view, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/b9c3a0ef.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Exterior"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/687abaab.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Aerial view"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Indoor pool, image",
+                "accessibilityText": "Living room | LED TV, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/9e09fa04.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Indoor pool"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/19cde2d7.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Living room | LED TV"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Studio, 1 King Bed (London Eye View) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Superior Room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/2e685782.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Studio, 1 King Bed (London Eye View) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/ad3ff179.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Superior Room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/672757ca.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/e0b44860.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Standard Single Room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/e84c5ccb.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/4c22539e.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Standard Single Room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Room amenity, image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/c7d30fbb.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Room amenity"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/821acc7a.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Bathroom | Shower, free toiletries, hair dryer, towels, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/dd2e5d1d.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/5fae6091.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bathroom | Shower, free toiletries, hair dryer, towels"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Shower, free toiletries, hair dryer, image",
+                "accessibilityText": "Bathroom | Shower, free toiletries, hair dryer, towels, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/65b50b79.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Shower, free toiletries, hair dryer"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/beb2b840.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bathroom | Shower, free toiletries, hair dryer, towels"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Shower, free toiletries, hair dryer, image",
+                "accessibilityText": "Front of property - evening/night, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/9055db4e.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Shower, free toiletries, hair dryer"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/59c533be.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Front of property - evening/night"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Exterior, image",
+                "accessibilityText": "Front of property, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/c9aca592.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Exterior"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/33f0eb30.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Front of property"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Bar (on property), image",
+                "accessibilityText": "Front of property, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/56aec371.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Bar (on property)"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/aa19d585.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Front of property"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Bar (on property), image",
+                "accessibilityText": "2 restaurants, breakfast served, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/2c233b7f.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Bar (on property)"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/ae18ce0a.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "2 restaurants, breakfast served"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
+                "accessibilityText": "2 restaurants, breakfast served, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/86799ea6.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/f24068fd.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "2 restaurants, breakfast served"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
+                "accessibilityText": "2 restaurants, breakfast served, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/9c928a3b.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/8cc39ccc.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "2 restaurants, breakfast served"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
+                "accessibilityText": "Sports facility, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/0f256507.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/335495dd.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Sports facility"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Spa, image",
+                "accessibilityText": "Sports facility, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/9b541fe0.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Spa"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/aa0e05b5.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Sports facility"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Spa, image",
+                "accessibilityText": "Gym, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/e1fbd005.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Spa"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Spa, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/2e63c545.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Spa"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Fitness facility, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/8027fb88.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Fitness facility"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Reception hall, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/8fff202c.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Reception hall"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/e7a4f12d.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Gym"
                 }
             },
             {
@@ -2272,667 +1949,7 @@
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/180c7eb0.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Ballroom, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/b71b6502.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Ballroom"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Property amenity, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/1f7d7452.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Property amenity"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Property amenity, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/8847396a.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Property amenity"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/662f710e.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/47c4a7cf.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/0873d514.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/1ae7cb6c.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms, Terrace | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/7639edbe.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms, Terrace | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Shower, free toiletries, hair dryer, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/70ab5918.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Shower, free toiletries, hair dryer"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Shower, free toiletries, hair dryer, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/e8e47794.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Shower, free toiletries, hair dryer"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Bar (on property), image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/bf6b44a8.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Bar (on property)"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Bar (on property), image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/8366ffd5.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Bar (on property)"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/666d4dc3.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/4f50c501.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Cafe, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/02ca2b43.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Cafe"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Spa, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/d41efc43.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Spa"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Spa, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/66178339.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Spa"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Spa, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/2430dc5c.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Spa"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/5088aaab.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Ballroom, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/192fd168.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Ballroom"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/1126c814.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Room amenity, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/19422fd5.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Room amenity"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (Big Ben View - 1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/a4534f39.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (Big Ben View - 1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms, Terrace | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/cd3bfd0c.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms, Terrace | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/f71abd30.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/9803cb07.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Shower, free toiletries, hair dryer, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/58d498f5.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Shower, free toiletries, hair dryer"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Shower, free toiletries, hair dryer, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/a2a46b6d.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Shower, free toiletries, hair dryer"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Bar (on property), image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/a17b7f08.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Bar (on property)"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Bar (on property), image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/6492ca83.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Bar (on property)"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/6c7dcb18.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/fdb574fd.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/c2589719.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Ballroom, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/09b4756d.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Ballroom"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Ballroom, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/d6bd8808.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Ballroom"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Reception hall, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/0be9bc35.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Reception hall"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/c331705c.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (Big Ben View - 1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/ea924613.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (Big Ben View - 1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/0f0b1db9.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (Big Ben View - 1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/c4ce8157.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (Big Ben View - 1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/4e86d28f.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Bar (on property), image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/e10d78fa.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Bar (on property)"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/721a4aa0.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/00e5ae86.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/71e29022.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Banquet hall, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/530765ae.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Banquet hall"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/c329e562.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Banquet hall, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/db186549.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Banquet hall"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/5220b86d.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Studio, 1 King Bed (Big Ben View) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/703c6a76.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Studio, 1 King Bed (Big Ben View) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/d140756f.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/fbeba3b9.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/bfcdb027.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/0267810a.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/99f662d0.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/caf2a1c3.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Ballroom, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/be2697be.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Ballroom"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/d56aaad1.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Interior detail, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/42f9bf09.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Interior detail"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/122bde75.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/2c56afd9.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/c0ed14bf.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/5304a4eb.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 1 King Bed (1 Bedroom) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Studio, 1 King Bed | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/a44acfcc.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Studio, 1 King Bed | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "2 restaurants, breakfast, lunch, and dinner served, French cuisine, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/f7662454.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "2 restaurants, breakfast, lunch, and dinner served, French cuisine"
-                }
-            },
-            {
-                "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
-                "imageId": null,
-                "image": {
-                    "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/86afe5ff.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/200ebfda.jpg?impolicy=resizecrop&rw=500&ra=fit",
                     "description": "Meeting facility"
                 }
             },
@@ -2942,7 +1959,7 @@
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/25d1b6f8.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/a08fc55c.jpg?impolicy=resizecrop&rw=500&ra=fit",
                     "description": "Meeting facility"
                 }
             },
@@ -2952,237 +1969,337 @@
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/fc0f3ba1.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/d19dda83.jpg?impolicy=resizecrop&rw=500&ra=fit",
                     "description": "Meeting facility"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Deluxe Room  | City view, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/00cb295f.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/1506471a.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Deluxe Room  | City view"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Deluxe Room  | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/7e7bfa90.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/19b39b66.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Deluxe Room  | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Superior Room, 1 King Bed | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/fce83e40.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Superior Room, 1 King Bed | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/5d742ff0.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Studio, 1 King Bed (London Eye View) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Standard Single Room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/fc2dccbb.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Studio, 1 King Bed (London Eye View) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/a827921e.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Standard Single Room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/b7582b84.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/4add8624.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
+                "accessibilityText": "Standard Twin Room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/97a58b08.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/f7df316e.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Standard Twin Room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
+                "accessibilityText": "Bathroom shower, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/572ad55e.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/b2987ef6.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bathroom shower"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
+                "accessibilityText": "Bathroom | Shower, free toiletries, hair dryer, towels, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/a228e843.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/d5827017.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bathroom | Shower, free toiletries, hair dryer, towels"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "2 restaurants, breakfast served, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/3e7d0806.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/09494a9e.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "2 restaurants, breakfast served"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/70bb6947.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/246d3b57.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Standard Twin Room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/a7d5e650.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Suite, 2 Bedrooms | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/6fcffac8.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Standard Twin Room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Studio, 1 King Bed (London Eye View) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar, image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/82745fe8.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Studio, 1 King Bed (London Eye View) | Egyptian cotton sheets, premium bedding, memory foam beds, minibar"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/2ceceba4.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Room amenity, image",
+                "accessibilityText": "Triple room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/b6a7b18a.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Room amenity"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/79c9909c.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Triple room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Ballroom, image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/02514672.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Ballroom"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/eff678b2.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
+                "accessibilityText": "Triple room | Bathroom | Shower, free toiletries, hair dryer, towels, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/7b9e3590.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/bd248c6e.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Triple room | Bathroom | Shower, free toiletries, hair dryer, towels"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
+                "accessibilityText": "Bathroom | Shower, free toiletries, hair dryer, towels, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/98c89778.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/2c663dcb.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bathroom | Shower, free toiletries, hair dryer, towels"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
+                "accessibilityText": "Standard Double Room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/309dff97.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/1f02a4ed.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Standard Double Room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Ballroom, image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/46265ab4.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Ballroom"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/33a4bf3a.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Meeting facility, image",
+                "accessibilityText": "Superior Room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/4bb78dc4.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Meeting facility"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/49303cb9.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Superior Room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Daily buffet breakfast (GBP 21.50 per person), image",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/22443a06.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Daily buffet breakfast (GBP 21.50 per person)"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/8c3c2aa9.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Cleanliness badge, image",
+                "accessibilityText": "Triple room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/fcd3ccc6.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Cleanliness badge"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/fc015707.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Triple room | Hypo-allergenic bedding, minibar, in-room safe, desk"
                 }
             },
             {
                 "__typename": "PropertyImage",
-                "accessibilityText": "Cleanliness badge, image",
+                "accessibilityText": "Bathroom | Shower, free toiletries, hair dryer, towels, image",
                 "imageId": null,
                 "image": {
                     "__typename": "Image",
-                    "url": "https://images.trvl-media.com/lodging/4000000/3120000/3113100/3113039/0f8e5ec6.jpg?impolicy=resizecrop&rw=500&ra=fit",
-                    "description": "Cleanliness badge"
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/50268eba.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bathroom | Shower, free toiletries, hair dryer, towels"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Shower, free toiletries, hair dryer, towels, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/d5fa21ad.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Shower, free toiletries, hair dryer, towels"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/d42a9a83.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Superior Room | Hypo-allergenic bedding, minibar, in-room safe, desk, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/7ed275fa.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Superior Room | Hypo-allergenic bedding, minibar, in-room safe, desk"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Hypo-allergenic bedding, minibar, in-room safe, desk, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/f2c5969e.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Hypo-allergenic bedding, minibar, in-room safe, desk"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Bathroom | Shower, free toiletries, hair dryer, towels, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/6d665d4e.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bathroom | Shower, free toiletries, hair dryer, towels"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Deluxe Room  | Bathroom | Shower, free toiletries, hair dryer, towels, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/3efae9e7.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Deluxe Room  | Bathroom | Shower, free toiletries, hair dryer, towels"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Bathroom | Shower, free toiletries, hair dryer, towels, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/105a70c7.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bathroom | Shower, free toiletries, hair dryer, towels"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Deluxe Room  | Bathroom amenities | Shower, free toiletries, hair dryer, towels, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/add13bbe.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Deluxe Room  | Bathroom amenities | Shower, free toiletries, hair dryer, towels"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Bowling, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/e2b5ff8d.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Bowling"
+                }
+            },
+            {
+                "__typename": "PropertyImage",
+                "accessibilityText": "Free daily continental breakfast, image",
+                "imageId": null,
+                "image": {
+                    "__typename": "Image",
+                    "url": "https://images.trvl-media.com/lodging/2000000/1460000/1458500/1458473/6c09cdf9.jpg?impolicy=resizecrop&rw=500&ra=fit",
+                    "description": "Free daily continental breakfast"
                 }
             }
         ],
-        "accessibilityLabel": "Photo gallery for Park Plaza Westminster Bridge London",
+        "accessibilityLabel": "Photo gallery for Riga Islande Hotel",
         "thumbnailGalleryDialog": {
             "__typename": "LodgingGalleryDialog",
             "trigger": {
                 "__typename": "LodgingDialogTriggerMessage",
-                "value": "110+",
+                "value": "51+",
                 "icon": {
                     "__typename": "Icon",
                     "id": "photo_library",
@@ -3195,7 +2312,7 @@
             },
             "toolbar": {
                 "__typename": "LodgingDialogToolbar",
-                "title": "Park Plaza Westminster Bridge London",
+                "title": "Riga Islande Hotel",
                 "icon": {
                     "__typename": "Icon",
                     "id": "arrow_back",
@@ -3211,13 +2328,13 @@
             "__typename": "LodgingGalleryDialog",
             "trigger": {
                 "__typename": "LodgingDialogTriggerMessage",
-                "value": "110+",
+                "value": "51+",
                 "icon": null,
                 "clientSideAnalytics": null
             },
             "toolbar": {
                 "__typename": "LodgingDialogToolbar",
-                "title": "Park Plaza Westminster Bridge London",
+                "title": "Riga Islande Hotel",
                 "icon": {
                     "__typename": "Icon",
                     "id": "close",
@@ -3240,13 +2357,13 @@
             },
             "propertyReviewCountDetails": {
                 "__typename": "PropertyReviewCountDetails",
-                "shortDescription": "See all 1,839 reviews"
+                "shortDescription": "See all 999 reviews"
             },
             "highlightMessage": {
                 "__typename": "MessageResult",
                 "subtitle": {
                     "__typename": "MessagingResultTitle",
-                    "text": "1,839 verified Hotels.com guest reviews"
+                    "text": "999 verified Hotels.com guest reviews"
                 }
             },
             "seeAllAction": {
@@ -3310,36 +2427,6 @@
                                                         "icon": null
                                                     },
                                                     "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "High-touch surfaces are cleaned and disinfected",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Follows standard cleaning and disinfection practices of Safety Protocol (Radisson)",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Follows industry cleaning and disinfection practices of Safe Travels (WTTC - Global)",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
                                                 }
                                             ]
                                         }
@@ -3376,27 +2463,7 @@
                                                     "__typename": "PropertyContentText",
                                                     "primary": {
                                                         "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Contactless check-in and check-out",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Cashless transactions are available for all charges at the property",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Protective shields in place at main contact areas",
+                                                        "value": "Guest rooms kept vacant for 48 hours between stays",
                                                         "accessibilityLabel": null,
                                                         "icon": null
                                                     },
@@ -3457,46 +2524,6 @@
                                                     "__typename": "PropertyContentText",
                                                     "primary": {
                                                         "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Temperature checks given to staff",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Temperature checks available for guests",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Masks and gloves available",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Masks are required at the property",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
                                                         "value": "Hand sanitizer provided",
                                                         "accessibilityLabel": null,
                                                         "icon": null
@@ -3507,27 +2534,7 @@
                                                     "__typename": "PropertyContentText",
                                                     "primary": {
                                                         "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Enhanced food service safety measures are in place",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Individually-wrapped food options available for breakfast, lunch, dinner, and through room service",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Reservations are required for the use of certain onsite facilities",
+                                                        "value": "Individually-wrapped food options available for breakfast",
                                                         "accessibilityLabel": null,
                                                         "icon": null
                                                     },
@@ -3599,7 +2606,7 @@
                                     "__typename": "PropertyContent",
                                     "header": {
                                         "__typename": "LodgingHeader",
-                                        "text": "Park Plaza Westminster Bridge London",
+                                        "text": "Riga Islande Hotel",
                                         "subText": null,
                                         "icon": null,
                                         "headerImage": null
@@ -3609,7 +2616,7 @@
                                             "__typename": "PropertyContentItemMarkup",
                                             "content": {
                                                 "__typename": "MarkupText",
-                                                "text": "Park Plaza Westminster Bridge London puts you in a great location, within just a 10-minute walk of Big Ben and London Eye. The indoor pool is a great spot to take a dip, and guests can grab a bite to eat at Brasserie Joel, one of 2 restaurants, which serves French cuisine and is open for breakfast, lunch, and dinner. A bar/lounge, a fitness center, and a snack bar/deli are other highlights at this upscale hotel. Fellow travelers like the comfortable beds and helpful staff. The property is just a short walk to public transportation: Lambeth North Underground Station is 6 minutes and Waterloo Underground Station is 8 minutes.   ",
+                                                "text": "Riga Islande Hotel offers an airport shuttle (available 24 hours) for EUR 30 per vehicle one-way. After visiting the 24-hour fitness center for a workout, you can grab a bite to eat at one of the 2 restaurants or unwind with a drink at the bar/lounge. Fellow travelers like the convenient parking and helpful staff.   ",
                                                 "markupType": "HTML"
                                             }
                                         }
@@ -3638,7 +2645,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Arabic, Chinese (Mandarin), Dutch, English, French, German, Hindi, Irish, Italian, Japanese, Polish, Russian, Spanish",
+                                                    "value": "English, Latvian, Russian",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -3696,36 +2703,6 @@
                                                         "icon": null
                                                     },
                                                     "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "High-touch surfaces are cleaned and disinfected",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Follows standard cleaning and disinfection practices of Safety Protocol (Radisson)",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Follows industry cleaning and disinfection practices of Safe Travels (WTTC - Global)",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
                                                 }
                                             ]
                                         }
@@ -3762,27 +2739,7 @@
                                                     "__typename": "PropertyContentText",
                                                     "primary": {
                                                         "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Contactless check-in and check-out",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Cashless transactions are available for all charges at the property",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Protective shields in place at main contact areas",
+                                                        "value": "Guest rooms kept vacant for 48 hours between stays",
                                                         "accessibilityLabel": null,
                                                         "icon": null
                                                     },
@@ -3843,46 +2800,6 @@
                                                     "__typename": "PropertyContentText",
                                                     "primary": {
                                                         "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Temperature checks given to staff",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Temperature checks available for guests",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Masks and gloves available",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Masks are required at the property",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
                                                         "value": "Hand sanitizer provided",
                                                         "accessibilityLabel": null,
                                                         "icon": null
@@ -3893,27 +2810,7 @@
                                                     "__typename": "PropertyContentText",
                                                     "primary": {
                                                         "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Enhanced food service safety measures are in place",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Individually-wrapped food options available for breakfast, lunch, dinner, and through room service",
-                                                        "accessibilityLabel": null,
-                                                        "icon": null
-                                                    },
-                                                    "secondary": null
-                                                },
-                                                {
-                                                    "__typename": "PropertyContentText",
-                                                    "primary": {
-                                                        "__typename": "LodgingEnrichedMessage",
-                                                        "value": "Reservations are required for the use of certain onsite facilities",
+                                                        "value": "Individually-wrapped food options available for breakfast",
                                                         "accessibilityLabel": null,
                                                         "icon": null
                                                     },
@@ -3985,6 +2882,41 @@
                                     "__typename": "PropertyContent",
                                     "header": {
                                         "__typename": "LodgingHeader",
+                                        "text": "Mandatory fees",
+                                        "subText": null,
+                                        "icon": null,
+                                        "headerImage": null
+                                    },
+                                    "items": [
+                                        {
+                                            "__typename": "PropertyContentItemMarkup",
+                                            "content": {
+                                                "__typename": "MarkupText",
+                                                "text": "You'll be asked to pay the following charges by the property at check-in or check-out: <br/>",
+                                                "markupType": "HTML"
+                                            }
+                                        },
+                                        {
+                                            "__typename": "PropertyContentItemMarkup",
+                                            "content": {
+                                                "__typename": "MarkupText",
+                                                "text": "<ul><li><strong>A tax</strong> is imposed by the city and collected at the property. Exemptions or reductions might apply. For more details, please contact the property using the information on the reservation confirmation received after booking. </li><li><strong>A tax</strong> is imposed by the city: EUR 1.00 per person, per night, up to 10 nights. This tax does not apply to children under 18 years of age. </li><li><strong>Tourism fee:</strong> EUR 1 per person, per night</li></ul>",
+                                                "markupType": "HTML"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expando": null,
+                            "maxColumns": 1
+                        },
+                        {
+                            "__typename": "PropertyContentSubSection",
+                            "elements": [
+                                {
+                                    "__typename": "PropertyContent",
+                                    "header": {
+                                        "__typename": "LodgingHeader",
                                         "text": "Optional extras",
                                         "subText": null,
                                         "icon": null,
@@ -3995,61 +2927,7 @@
                                             "__typename": "PropertyContentItemMarkup",
                                             "content": {
                                                 "__typename": "MarkupText",
-                                                "text": "<ul><li><strong>Buffet breakfast</strong> is offered for an extra charge of GBP 21.50 per person (approximately)</li><li><strong>Late check-out</strong> can be arranged for an extra charge (subject to availability)</li> </ul>",
-                                                "markupType": "HTML"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ],
-                            "expando": null,
-                            "maxColumns": 1
-                        },
-                        {
-                            "__typename": "PropertyContentSubSection",
-                            "elements": [
-                                {
-                                    "__typename": "PropertyContent",
-                                    "header": {
-                                        "__typename": "LodgingHeader",
-                                        "text": "Renovations and closures",
-                                        "subText": null,
-                                        "icon": null,
-                                        "headerImage": null
-                                    },
-                                    "items": [
-                                        {
-                                            "__typename": "PropertyContentItemMarkup",
-                                            "content": {
-                                                "__typename": "MarkupText",
-                                                "text": "The following facilities are closed on Sunday, Wednesday, Thursday, Friday, and Saturday: <ul><li>Full-service spa</li></ul>",
-                                                "markupType": "HTML"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ],
-                            "expando": null,
-                            "maxColumns": 1
-                        },
-                        {
-                            "__typename": "PropertyContentSubSection",
-                            "elements": [
-                                {
-                                    "__typename": "PropertyContent",
-                                    "header": {
-                                        "__typename": "LodgingHeader",
-                                        "text": "Parking",
-                                        "subText": null,
-                                        "icon": null,
-                                        "headerImage": null
-                                    },
-                                    "items": [
-                                        {
-                                            "__typename": "PropertyContentItemMarkup",
-                                            "content": {
-                                                "__typename": "MarkupText",
-                                                "text": "<ul><li>Self parking costs GBP 65 per day</li><li>Parking is available nearby and costs GBP 65 per day (5 ft away)</li></ul>",
+                                                "text": "<ul><li><strong>Airport shuttle</strong> service is offered for an extra charge of EUR 30 per vehicle (one-way, maximum occupancy 4)</li> </ul>",
                                                 "markupType": "HTML"
                                             }
                                         }
@@ -4076,7 +2954,7 @@
                                             "__typename": "PropertyContentItemMarkup",
                                             "content": {
                                                 "__typename": "MarkupText",
-                                                "text": "<p>This property advises that enhanced cleaning and guest safety measures are currently in place.</p><p>Disinfectant is used to clean the property, and commonly-touched surfaces are cleaned with disinfectant between stays.</p><p>Personal protective equipment, including masks and gloves, will be available to guests.</p><p>Social distancing measures are in place; staff at the property wear personal protective equipment; a shield is in place between staff and guests in main contact areas; periodic temperature checks are conducted on staff; temperature checks are available to guests; guests are provided with hand sanitizer; cashless payment methods are available for all transactions; masks are required in public areas; reservations are required for some onsite facilities.</p>\n<p>Contactless check-in and contactless check-out are available.</p><p>Enhanced food service safety measures are in place.</p><p>Individually-wrapped food options are available for breakfast, lunch, and dinner, and also through room service.</p><p>This property affirms that it follows the cleaning and disinfection practices of Safety Protocol (Radisson).</p><p>This property affirms that it adheres to the cleaning and disinfection practices of Safe Travels (WTTC - Global).</p>",
+                                                "text": "<p>This property advises that enhanced cleaning and guest safety measures are currently in place.</p><p>Disinfectant is used to clean the property.</p><p>Social distancing measures are in place; staff at the property wear personal protective equipment; guests are provided with hand sanitizer.</p><p>Individually-wrapped food options are available for breakfast.</p><p>Each guestroom is kept vacant for a minimum of 48 hours between bookings.</p>",
                                                 "markupType": "HTML"
                                             }
                                         }
@@ -4103,7 +2981,7 @@
                                             "__typename": "PropertyContentItemMarkup",
                                             "content": {
                                                 "__typename": "MarkupText",
-                                                "text": "<p>Construction is underway at a neighboring building and there may be noise disturbance from the construction work. </p><p>The property has connecting/adjoining rooms, which are subject to availability and can be requested by contacting the property using the number on the booking confirmation. </p><p>Only registered guests are allowed in the guestrooms. </p> <p>Guests can rest easy knowing there's a fire extinguisher, a smoke detector, and a first aid kit on site. </p><p> This property welcomes guests of all sexual orientations and gender identities (LGBTQ friendly). </p><p>The name on the credit card used at check-in to pay for incidentals must be the primary name on the guestroom reservation. </p><p>Special cancellation policies or charges may apply for group reservations (more than 8 rooms for the same property / stay dates). </p><p>This property accepts credit cards and debit cards. Cash is not accepted.</p><p>This property reserves the right to pre-authorize the guest's credit card prior to arrival. </p>",
+                                                "text": "<p>Guests can rest easy knowing there's a fire extinguisher, a smoke detector, a security system, and a first aid kit on site. </p><p>This property accepts credit cards. Cash is not accepted.</p>",
                                                 "markupType": "HTML"
                                             }
                                         }
@@ -4132,7 +3010,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza London Bridge",
+                                                    "value": "Hotel Islande",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -4145,7 +3023,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster",
+                                                    "value": "Islande Hotel",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -4158,7 +3036,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Bridge London",
+                                                    "value": "Islande Hotel Riga",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -4171,7 +3049,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Hotel",
+                                                    "value": "Islande Riga",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -4184,7 +3062,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Hotel London Bridge",
+                                                    "value": "Riga Islande",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -4197,7 +3075,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster London Bridge",
+                                                    "value": "Islande",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -4210,7 +3088,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Westminster Park Plaza",
+                                                    "value": "Riga Islande Hotel Riga",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -4223,7 +3101,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Bridge London England",
+                                                    "value": "Riga Islande Hotel Hotel",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
@@ -4236,72 +3114,7 @@
                                                 "__typename": "PropertyContentText",
                                                 "primary": {
                                                     "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Bridge London Hotel London",
-                                                    "accessibilityLabel": null,
-                                                    "icon": null
-                                                },
-                                                "secondary": null
-                                            }
-                                        },
-                                        {
-                                            "__typename": "PropertyContentItemText",
-                                            "content": {
-                                                "__typename": "PropertyContentText",
-                                                "primary": {
-                                                    "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Bridge London Hotel",
-                                                    "accessibilityLabel": null,
-                                                    "icon": null
-                                                },
-                                                "secondary": null
-                                            }
-                                        },
-                                        {
-                                            "__typename": "PropertyContentItemText",
-                                            "content": {
-                                                "__typename": "PropertyContentText",
-                                                "primary": {
-                                                    "__typename": "LodgingEnrichedMessage",
-                                                    "value": " Park Plaza Westminster Bridge London England",
-                                                    "accessibilityLabel": null,
-                                                    "icon": null
-                                                },
-                                                "secondary": null
-                                            }
-                                        },
-                                        {
-                                            "__typename": "PropertyContentItemText",
-                                            "content": {
-                                                "__typename": "PropertyContentText",
-                                                "primary": {
-                                                    "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Bridge London Hotel",
-                                                    "accessibilityLabel": null,
-                                                    "icon": null
-                                                },
-                                                "secondary": null
-                                            }
-                                        },
-                                        {
-                                            "__typename": "PropertyContentItemText",
-                                            "content": {
-                                                "__typename": "PropertyContentText",
-                                                "primary": {
-                                                    "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Bridge London London",
-                                                    "accessibilityLabel": null,
-                                                    "icon": null
-                                                },
-                                                "secondary": null
-                                            }
-                                        },
-                                        {
-                                            "__typename": "PropertyContentItemText",
-                                            "content": {
-                                                "__typename": "PropertyContentText",
-                                                "primary": {
-                                                    "__typename": "LodgingEnrichedMessage",
-                                                    "value": "Park Plaza Westminster Bridge London Hotel London",
+                                                    "value": "Riga Islande Hotel Hotel Riga",
                                                     "accessibilityLabel": null,
                                                     "icon": null
                                                 },
