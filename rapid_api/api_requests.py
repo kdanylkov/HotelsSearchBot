@@ -81,8 +81,6 @@ def get_hotels_from_api(query_data: dict) -> None:
     передаётся в функцию send_hotel_info_to_user
     '''
 
-    sort = 'PRICE_LOW_TO_HIGH' if query_data['sortOrder'] in ('lowprice', 'highprice') else 'DISTANCE'
-
     payload = {
 	"currency": "USD",
 	"eapid": 1,
@@ -101,7 +99,7 @@ def get_hotels_from_api(query_data: dict) -> None:
 	},
 	"rooms": [{"adults": 1}],
 	"resultsSize": int(query_data["hotels_amount"]),
-	"sort": sort
+	"sort": query_data['sortOrder']
     }
 
     try:
