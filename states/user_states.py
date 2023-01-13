@@ -16,4 +16,5 @@ class UserStates(StatesGroup):
     photos_amount = State()
     confirm_data = State()
     wait_for_results = State()
+    price_range = State()
 
