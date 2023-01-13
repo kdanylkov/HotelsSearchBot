@@ -29,7 +29,7 @@ class BaseDigitFilter(SimpleCustomFilter):
     min_val = 1
     max_val = 25
     
-    def check(self, message: Message):
+    def check(self, message: Message) -> bool:
         '''Метод для проверки на соответствие условиям фильтра'''
         try:
             amt = int(message.text)  #type: ignore
@@ -58,4 +58,21 @@ class PhotosAmount(BaseDigitFilter):
 
     key = 'is_photos_amt_correct'
     max_val = 5
+
+class PriceRangeCorrect(SimpleCustomFilter):
+    '''
+    Класс-фильтр PriceRangeCorrect, наследник класса SimpleCustomFilter. Используется для проверки 
+    на соответствие пользовательского ввода следующим критериям:
+        1. Ввод состоит двух цифр
+        2. Введённые цифры разделены пробелом
+    '''
+
+    def check(self, message: Message) -> bool:
+        try:
+            numbers = [int(number) for number in message.text.split()]        #type: ignore
+        except ValueError:
+            return False
+        return len(numbers) == 2
+
+
 
