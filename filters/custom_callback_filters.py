@@ -67,12 +67,14 @@ class PriceRangeCorrect(SimpleCustomFilter):
         2. Введённые цифры разделены пробелом
     '''
 
+    key = 'is_range_correct'
+
     def check(self, message: Message) -> bool:
         try:
             numbers = [int(number) for number in message.text.split()]        #type: ignore
         except ValueError:
             return False
-        return len(numbers) == 2
+        return len(numbers) == 2 and numbers[0] < numbers[1]
 
 
 
