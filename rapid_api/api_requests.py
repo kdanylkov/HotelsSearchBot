@@ -101,6 +101,14 @@ def get_hotels_from_api(query_data: dict) -> None:
 	"sort": query_data['sortOrder']
     }
 
+    if query_data['sortOrder'] == 'DISTANCE':
+        payload['filters'] = {
+            "price": {
+                "max": query_data['price_max'],
+                "min": query_data['price_min']
+            }
+        }
+
     try:
         response_serialized = request_to_api(method='POST', url=URLS['hotels'], headers=HEADERS, querystring=payload)
         send_hotels_info_to_user(response_serialized, query_data)
@@ -176,6 +184,10 @@ def send_hotels_info_to_user(response_serialized: dict, query_data: dict):
         * response_serialized: dict - Сериализированный ответ от сервера.
         * query_data: dict - Словарь, содержащий информацию о запросе.
     '''
+
+    if response_serialized['data'] is None:
+        bot.send_message(query_data['user_id'], 'По заданным критериям отелей не нашлось😞')
+        return
 
     results = response_serialized['data']['propertySearch']['properties']
     chat_id = query_data['user_id']

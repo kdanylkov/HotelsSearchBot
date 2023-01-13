@@ -65,8 +65,13 @@ def hotels_amount_correct(message: Message):
     with bot.retrieve_data(message.chat.id) as data:                     #type: ignore
         data['hotels_amount'] = message.text
 
-    bot.send_message(message.chat.id, 'Загружать фотографии?', reply_markup=if_need_photos_keyboard())
-    bot.set_state(message.chat.id, UserStates.ask_for_photos)
+    if data['sortOrder'] == 'DISTANCE':
+        msg = 'Введите максимальную и минимальную цену за ночь (в USD) через пробел'
+        bot.send_message(message.chat.id, msg)
+        bot.set_state(message.chat.id, UserStates.price_range)
+    else:
+        bot.send_message(message.chat.id, 'Загружать фотографии?', reply_markup=if_need_photos_keyboard())
+        bot.set_state(message.chat.id, UserStates.ask_for_photos)
 
             
 @bot.message_handler(state=UserStates.hotels_amount, is_hotels_amt_correct=False)
