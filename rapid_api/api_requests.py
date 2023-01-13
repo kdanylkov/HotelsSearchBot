@@ -1,5 +1,4 @@
 from loader import bot
-from json import dump
 import requests
 from config_data.config import HEADERS, URLS
 from telebot.types import InputMediaPhoto
@@ -81,8 +80,6 @@ def get_hotels_from_api(query_data: dict) -> None:
     передаётся в функцию send_hotel_info_to_user
     '''
 
-    sort = 'PRICE_LOW_TO_HIGH' if query_data['sortOrder'] in ('lowprice', 'highprice') else 'DISTANCE'
-
     payload = {
 	"currency": "USD",
 	"eapid": 1,
@@ -101,7 +98,7 @@ def get_hotels_from_api(query_data: dict) -> None:
 	},
 	"rooms": [{"adults": 1}],
 	"resultsSize": int(query_data["hotels_amount"]),
-	"sort": sort
+	"sort": query_data['sortOrder']
     }
 
     try:
@@ -136,15 +133,21 @@ def get_hotel_info_and_photos(i: int, info: dict, query_data: dict) -> Tuple[str
             locale,
         )
 
-    hotel_name = info['name']
+    star_rating = f'{star_rating}/5' if star_rating else 'нет данных'
 
-    dates_delta = query_data['departure_date'] - query_data['arrival_date']
-    nights_to_stay = dates_delta.days
+    hotel_name: str = info['name']
 
-    price_per_night = info['price']['lead']['amount']
-    total_price = round(price_per_night * nights_to_stay, 2)
+    dates_delta: int = query_data['departure_date'] - query_data['arrival_date']
+    nights_to_stay: int = dates_delta.days
 
-    customer_rating = info.get('reviews', {}).get('score')
+    price_per_night: float = info['price']['lead']['amount']
+    total_price: float = round(price_per_night * nights_to_stay, 2)
+
+    customers_score: float | None = info.get('reviews', {}).get('score')
+    total_reviews: int | None = info.get('reviews', {}).get('total')
+
+    customer_rating = f'{customers_score} (всего {total_reviews} оценок)' \
+            if customers_score and total_reviews else 'нет данных'
 
     distance_from_center = info['destinationInfo']['distanceFromDestination']['value']
     distance_unit = 'км' if info['destinationInfo']['distanceFromDestination']['unit'] == 'KILOMETER' else 'miles'
@@ -153,8 +156,8 @@ def get_hotel_info_and_photos(i: int, info: dict, query_data: dict) -> Tuple[str
 
     info_text = f'''{i + 1}) <b><a href="hotels.com/h{hotel_id}.Hotel-Information">{hotel_name}</a></b>
 <i>Адрес: </i><b>{address if address else 'нет данных'}</b>
-<i>Категория отеля ("звездность"): </i><b>{star_rating if star_rating else 'нет данных'}/5</b>
-<i>Пользовательский рейтинг: </i><b>{customer_rating if customer_rating else 'нет данных'}</b>
+<i>Категория отеля ("звездность"): </i><b>{star_rating}</b>
+<i>Пользовательский рейтинг: </i><b>{customer_rating}</b>
 <i>Расстояние от центра города: </i><b>{distance_from_center} {distance_unit}</b>
 <i>Средняя стоимость номера за ночь на указанные даты (без учета налогов)</i>: <b>{price_per_night} USD</b>
 <i>Примерная общая стоимость проживания (без учета налогов)</i>: <b>{total_price} USD</b>
@@ -224,13 +227,9 @@ def get_rating_adderess_and_photos_from_api(hotel_id: str, photos_amount: int, l
             'locale': locale
             }
 
-    print(payload)
     response_serialized = request_to_api('POST', URLS['photos'], HEADERS, payload)
-    print(response_serialized)
 
     property_info = response_serialized['data']['propertyInfo']
-    with open('temp.json', 'w', encoding='utf-8') as wf:
-        dump(property_info, wf, ensure_ascii=False, indent=4)
 
     photos: list = property_info['propertyGallery']['images'][0:int(photos_amount)]
 

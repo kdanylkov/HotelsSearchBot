@@ -3,8 +3,8 @@ from keyboards.inline import confirm_query_keyboard
 
 
 criterias = {
-        'lowprice': 'Топ самых дешёвых отелей',
-        'highprice': 'Топ самых дорогих отелей',
+        'PRICE_LOW_TO_HIGH': 'Топ самых дешёвых отелей',
+        'RATING': 'Топ отелей по оценкам пользователей',
         'bestdeal': 'Топ отелей, наиболее подходящим по цене и расположению от центра'
     }
 
