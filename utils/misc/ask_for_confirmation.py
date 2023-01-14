@@ -5,7 +5,7 @@ from keyboards.inline import confirm_query_keyboard
 criterias = {
         'PRICE_LOW_TO_HIGH': 'Топ самых дешёвых отелей',
         'RATING': 'Топ отелей по оценкам пользователей',
-        'bestdeal': 'Топ отелей, наиболее подходящим по цене и расположению от центра'
+        'DISTANCE': 'Топ отелей, наиболее подходящим по цене и расположению от центра'
     }
 
 
@@ -19,7 +19,6 @@ def ask_for_input_confirmation(id: int) -> None:
         * id: int - Telegram-id пользователя
     '''
 
-    print(type(id).__name__)
     with bot.retrieve_data(id) as data:                                         #type: ignore
         arrival_date = data['arrival_date'].strftime('%d.%m.%Y')
         departure_date = data['departure_date'].strftime('%d.%m.%Y')
@@ -32,5 +31,15 @@ def ask_for_input_confirmation(id: int) -> None:
                 5) Дата заезда: {arrival_date} \n \
                 6) Дата выезда: {departure_date}'
 
+        if data['sortOrder'] == 'DISTANCE':
+
+            bestdeal_amendment = f'''
+                 7) Минимальная цена: {data["price_min"]} USD
+                 8) Максимальная цена: {data["price_max"]} USD
+'''
+            text = ''.join([text, bestdeal_amendment])
+                            
+
     bot.send_message(id, text, reply_markup=confirm_query_keyboard())
+
 
