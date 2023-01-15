@@ -26,7 +26,8 @@ DEFAULT_COMMANDS = (
         ('help', 'Вывести справку'),
         ('lowprice', 'Поиск по самой низкой цене'),
         ('rating', 'Поиск наивысшим оценкам пользователей'),
-        ('bestdeal', 'Поиск по удаленности от центра города и цене')
+        ('bestdeal', 'Поиск по удаленности от центра города и цене'),
+        ('history', 'История запросов на поиск отелей')
     )
 
 HEADERS = {
@@ -40,3 +41,10 @@ URLS = {
     "hotels": "https://hotels4.p.rapidapi.com/properties/v2/list",
     "photos": "https://hotels4.p.rapidapi.com/properties/v2/detail"
 }
+
+criterias = {
+        'PRICE_LOW_TO_HIGH': 'Топ самых дешёвых отелей',
+        'RATING': 'Топ отелей по оценкам пользователей',
+        'DISTANCE': 'Топ отелей, наиболее подходящим по цене и расположению от центра'
+    }
+

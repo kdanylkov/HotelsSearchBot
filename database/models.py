@@ -1,7 +1,7 @@
 import peewee as pw
 from datetime import datetime
 
-db = pw.SqliteDatabase('database/hotels-search.db')
+db = pw.SqliteDatabase('database/hotels-search.db', pragmas={'foreign_keys': 1})
 
 
 class BaseModel(pw.Model):
@@ -41,6 +41,7 @@ class Query(BaseModel):
         * creation_time - Дата и время запроса
         * hotels_to_find - Количество отелей для поиска
         * photos_to_find - Количество фотографий для каждого отеля
+        * sort_order - Вариант сортировки
 
     '''
 
@@ -52,6 +53,7 @@ class Query(BaseModel):
     creation_time = pw.DateTimeField(default=datetime.now)
     hotels_to_find = pw.IntegerField()
     photos_to_find = pw.IntegerField()
+    sort_order = pw.CharField()
 
 
 class Hotel(BaseModel):
@@ -84,7 +86,7 @@ class QueryToHotel(BaseModel):
         * hotel_id - Внешний ключ: id отеля
     '''
 
-    query_id = pw.ForeignKeyField(Query)
+    query_id = pw.ForeignKeyField(Query, on_delete='CASCADE')
     hotel_id = pw.ForeignKeyField(Hotel)
 
 

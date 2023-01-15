@@ -1,12 +1,13 @@
 from loader import bot, calendar_1_callback
-from telebot.types import CallbackQuery
+from telebot.types import CallbackQuery, ReplyKeyboardRemove
 from filters import destinations_factory
 from datetime import datetime, timedelta
 from states import UserStates
 from keyboards.inline import create_calendar_keyboard, calendar_keyboard
 from utils import ask_for_input_confirmation
-from database import add_query
+from database import add_query, delete_user_query_history
 from rapid_api import get_hotels_from_api
+from database import get_history_from_db
 
 
 @bot.callback_query_handler(func=None, locations_config=destinations_factory.filter())
@@ -199,5 +200,43 @@ def callback_data_input_confirmation(call: CallbackQuery):
             get_hotels_from_api(data)
 
             bot.delete_state(call.message.chat.id)
+
+
+@bot.callback_query_handler(state=UserStates.history_choice, func=lambda call: call.data.startswith('hist'))
+def history_callback(call: CallbackQuery):
+    '''
+    Обработчик callback запросов нажатии одной из кнопок inline клавиатуры для команды /history.
+
+        * Если call.data == "hist_cancel", любые состояния пользователя сбрасываются, операция вывода
+        истории запросов отменяется.
+        * Если call.data == "hist_delete", история запросов пользователя удаляется из базы данных.
+        * Если call.data == "hist_day" или "hist_week" или "hist_month", запускается функция
+        get_history_from_db для формирования списка с сообщениями о запросах пользователя на поиск отелей.
+    '''
+
+    bot.delete_message(call.message.chat.id, call.message.message_id)
+
+    match call.data:
+        
+        case 'hist_delete':
+
+            delete_user_query_history(call.message.chat.id)
+            bot.send_message(call.message.chat.id, 'История запросов удалена')
+
+        case 'hist_cancel':
+
+            bot.send_message(call.message.chat.id, 'Операция отменена.', reply_markup=ReplyKeyboardRemove())
+            bot.delete_state(call.message.chat.id)
+
+        case _:
+
+            history_text_messages: list = get_history_from_db(call.data, call.message.chat.id)
+            
+            if history_text_messages:
+                for message in history_text_messages:
+                    bot.send_message(call.message.chat.id, message, parse_mode='html')
+            else:
+                bot.send_message(call.message.chat.id, 'В базе данных не найдены записи')
+            
 
 
