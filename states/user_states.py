@@ -17,4 +17,5 @@ class UserStates(StatesGroup):
     confirm_data = State()
     wait_for_results = State()
     price_range = State()
+    history_choice = State()
 
