@@ -1,13 +1,15 @@
 from loader import bot, calendar_1_callback
-from telebot.types import CallbackQuery, ReplyKeyboardRemove
-from filters import destinations_factory
-from datetime import datetime, timedelta
 from states import UserStates
+from database import add_query, delete_user_query_history
+from database import get_history_from_db
 from keyboards.inline import create_calendar_keyboard, calendar_keyboard
 from utils import ask_for_input_confirmation
-from database import add_query, delete_user_query_history
 from rapid_api import get_hotels_from_api
-from database import get_history_from_db
+from filters import destinations_factory
+
+from telebot.types import CallbackQuery, ReplyKeyboardRemove
+
+from datetime import datetime, timedelta
 
 
 @bot.callback_query_handler(func=None, locations_config=destinations_factory.filter())
